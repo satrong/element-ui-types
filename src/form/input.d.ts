@@ -11,7 +11,7 @@ import type { TComponent, Size } from '../helper'
  */
 export type TElInput = TComponent<{
   /** 绑定值 */
-  value: string | number
+  value?: string | number
   /** 输入框类型 */
   type: 'text' | 'textarea' | 'number' | 'password' | 'url' | 'email' | 'date' | 'search'
   /** 最大输入长度 */
@@ -99,7 +99,7 @@ export type TElAutocomplete = TComponent<{
   /** 输入建议对象中用于显示的键名，默认值 `value` */
   valueKey: string
   /** 必填值，输入绑定值 */
-  value: string
+  value?: string
   /** 获取输入建议的去抖延时，默认值 `300` */
   debounce: number
   /** 菜单弹出位置，可选值 `top` `top-start` `top-end` `bottom` `bottom-start` `bottom-end`，默认值 `bottom-start` */

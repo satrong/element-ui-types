@@ -5,7 +5,7 @@ import type { TComponent, Size } from '../helper'
  */
 export type TElRadio = TComponent<{
   /** 绑定值 */
-  value: string | number | boolean
+  value?: string | number | boolean
   /** Radio 的 value */
   label: string | number | boolean
   /** 是否禁用 */
@@ -28,7 +28,7 @@ export type TElRadio = TComponent<{
  */
 export type TElRadioGroup = TComponent<{
   /** 绑定值 */
-  value: string | number | boolean
+  value?: string | number | boolean
   /** Radio 的尺寸，仅对按钮形式的 Radio 或带有边框的 Radio 有效 */
   size: Size
   /** 是否禁用，默认值 `false` */

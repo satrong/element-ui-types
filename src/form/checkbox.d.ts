@@ -2,7 +2,7 @@ import type { TComponent, Size } from '../helper'
 
 export type TElCheckbox = TComponent<{
   /** 绑定值 */
-  value: string | number | boolean
+  value?: string | number | boolean
   /** 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效） */
   label: string | number | boolean
   /** 选中时的值 */
@@ -33,7 +33,7 @@ export type TElCheckbox = TComponent<{
  */
 export type TElCheckboxGroup = TComponent<{
   /** 绑定值 */
-  value: string | number | boolean
+  value?: string | number | boolean
   /** 多选框组尺寸，仅对按钮形式的 Checkbox 或带有边框的 Checkbox 有效 */
   size: Size
   /** 是否禁用，默认值 `false` */
