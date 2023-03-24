@@ -14,9 +14,9 @@
 
 #### Form
 
-- [ ] Radio 单选框
-- [ ] Checkbox 多选框
-- [ ] Input 输入框
+- [x] Radio 单选框
+- [x] Checkbox 多选框
+- [x] Input 输入框
 - [ ] InputNumber 计数器
 - [ ] Select 选择器
 - [ ] Cascader 级联选择器
