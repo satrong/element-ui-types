@@ -1,0 +1,39 @@
+{
+  "name": "element-ui-types",
+  "version": "1.0.0",
+  "description": "ElementUI typescript definition",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "element-ui",
+    "element ui",
+    "element types"
+  ],
+  "author": "satrong <satrong@foxmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/types": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "typescript": "^5.0.2",
+    "vue": "^2.7.14"
+  },
+  "lint-staged": {
+    "*.{ts}": "eslint --fix"
+  },
+  "files": [
+    "src"
+  ]
+}
