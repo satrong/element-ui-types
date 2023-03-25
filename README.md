@@ -18,7 +18,7 @@
 - [x] Checkbox 多选框
 - [x] Input 输入框
 - [x] InputNumber 计数器
-- [ ] Select 选择器
+- [x] Select 选择器
 - [ ] Cascader 级联选择器
 - [ ] Switch 开关
 - [ ] Slider 滑块
