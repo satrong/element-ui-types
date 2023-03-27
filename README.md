@@ -19,10 +19,10 @@
 - [x] Input 输入框
 - [x] InputNumber 计数器
 - [x] Select 选择器
-- [ ] Cascader 级联选择器
-- [ ] Switch 开关
-- [ ] Slider 滑块
-- [ ] TimePicker 时间选择器
+- [x] Cascader 级联选择器
+- [x] Switch 开关
+- [x] Slider 滑块
+- [x] TimePicker 时间选择器
 - [ ] DatePicker 日期选择器
 - [ ] DateTimePicker 日期时间选择器
 - [ ] Upload 上传
