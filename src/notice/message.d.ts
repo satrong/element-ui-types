@@ -25,6 +25,4 @@ export interface IElMessage {
   onClose?: (instance: Component) => void
   /** Message 距离窗口顶部的偏移量，默认值 `20` */
   offset?: number
-  /** 关闭当前的 **/
-  onClose?: () => void
 }
