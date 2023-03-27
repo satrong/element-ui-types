@@ -32,3 +32,7 @@ export type Size = 'medium' | 'small' | 'mini'
 export type ButtonType = 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text'
 
 export type ThemeType = 'success' | 'warning' | 'danger' | 'info'
+
+export type NoticeType = 'success' | 'warning' | 'info' | 'error'
+
+export type EffectType = 'light' | 'dark'
