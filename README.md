@@ -50,11 +50,11 @@
 
 #### Notice
 
-- [ ] Alert 警告
-- [ ] Loading 加载
-- [ ] Message 消息提示
-- [ ] MessageBox 弹框
-- [ ] Notification 通知
+- [x] Alert 警告
+- [x] Loading 加载
+- [x] Message 消息提示
+- [x] MessageBox 弹框
+- [x] Notification 通知
 
 
 #### Navigation
