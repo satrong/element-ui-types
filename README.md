@@ -23,8 +23,8 @@
 - [x] Switch 开关
 - [x] Slider 滑块
 - [x] TimePicker 时间选择器
-- [ ] DatePicker 日期选择器
-- [ ] DateTimePicker 日期时间选择器
+- [x] DatePicker 日期选择器
+- [x] DateTimePicker 日期时间选择器 （实际上没有该组件，该组件是 DatePicker + TimePicker）
 - [ ] Upload 上传
 - [ ] Rate 评分
 - [ ] ColorPicker 颜色选择器
