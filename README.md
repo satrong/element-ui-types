@@ -26,7 +26,7 @@
 - [x] DatePicker 日期选择器
 - [x] DateTimePicker 日期时间选择器 （实际上没有该组件，该组件是 DatePicker + TimePicker）
 - [x] Upload 上传
-- [ ] Rate 评分
+- [x] Rate 评分
 - [ ] ColorPicker 颜色选择器
 - [ ] Transfer 穿梭框
 - [ ] Form 表单
