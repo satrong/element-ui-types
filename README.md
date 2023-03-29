@@ -28,7 +28,7 @@
 - [x] Upload 上传
 - [x] Rate 评分
 - [x] ColorPicker 颜色选择器
-- [ ] Transfer 穿梭框
+- [x] Transfer 穿梭框
 - [ ] Form 表单
 
 
