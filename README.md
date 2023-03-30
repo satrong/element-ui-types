@@ -6,9 +6,9 @@
 
 - [x] Layout 布局
 - [x] Container 布局容器
-- [ ] Color 色彩
-- [ ] Icon 图标
-- [ ] Button 按钮
+- [x] ~~Color 色彩~~
+- [x] ~~Icon 图标~~
+- [x] Button 按钮
 - [ ] Link 文字链接
 
 
@@ -24,7 +24,7 @@
 - [x] Slider 滑块
 - [x] TimePicker 时间选择器
 - [x] DatePicker 日期选择器
-- [x] DateTimePicker 日期时间选择器 （实际上没有该组件，该组件是 DatePicker + TimePicker）
+- [x] ~~DateTimePicker 日期时间选择器 （实际上没有该组件，该组件是 DatePicker + TimePicker）~~
 - [x] Upload 上传
 - [x] Rate 评分
 - [x] ColorPicker 颜色选择器
