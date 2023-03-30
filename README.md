@@ -4,7 +4,7 @@
 
 #### Basic
 
-- [ ] Layout 布局
+- [x] Layout 布局
 - [ ] Container 布局容器
 - [ ] Color 色彩
 - [ ] Icon 图标
