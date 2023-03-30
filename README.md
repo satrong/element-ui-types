@@ -9,7 +9,7 @@
 - [x] ~~Color 色彩~~
 - [x] ~~Icon 图标~~
 - [x] Button 按钮
-- [ ] Link 文字链接
+- [x] Link 文字链接
 
 
 #### Form
