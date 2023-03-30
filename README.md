@@ -29,7 +29,7 @@
 - [x] Rate 评分
 - [x] ColorPicker 颜色选择器
 - [x] Transfer 穿梭框
-- [ ] Form 表单
+- [x] Form 表单
 
 
 #### Data
