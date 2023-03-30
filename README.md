@@ -34,7 +34,7 @@
 
 #### Data
 
-- [ ] Table 表格
+- [x] Table 表格
 - [ ] Tag 标签
 - [ ] Progress 进度条
 - [ ] Tree 树形控件

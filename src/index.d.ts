@@ -1,4 +1,6 @@
 export * from './helper'
 export * from './async-validator-type'
+export * from './basic/index'
 export * from './form/index'
+export * from './data/index'
 export * from './notice/index'
