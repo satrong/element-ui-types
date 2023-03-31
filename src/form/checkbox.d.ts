@@ -4,7 +4,7 @@ export type TElCheckbox = TComponent<{
   /** 绑定值 */
   value?: string | number | boolean
   /** 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效） */
-  label: string | number | boolean
+  label: string | number | boolean | any
   /** 选中时的值 */
   trueLabel: string | number
   /** 没有选中时的值 */
@@ -25,7 +25,7 @@ export type TElCheckbox = TComponent<{
    * 当绑定值变化时触发的事件
    * @param value 更新后的值
    */
-  onChange: (value: unknown) => void
+  onChange: (value: any) => void
 }>
 
 /**
@@ -33,7 +33,7 @@ export type TElCheckbox = TComponent<{
  */
 export type TElCheckboxGroup = TComponent<{
   /** 绑定值 */
-  value?: string | number | boolean
+  value?: any[]
   /** 多选框组尺寸，仅对按钮形式的 Checkbox 或带有边框的 Checkbox 有效 */
   size: Size
   /** 是否禁用，默认值 `false` */
@@ -50,7 +50,7 @@ export type TElCheckboxGroup = TComponent<{
    * 当绑定值变化时触发的事件
    * @param value 更新后的值
    */
-  onChange: (value: unknown) => void
+  onChange: (value: any) => void
 }>
 
 /**
