@@ -35,17 +35,17 @@
 #### Data
 
 - [x] Table 表格
-- [ ] Tag 标签
-- [ ] Progress 进度条
-- [ ] Tree 树形控件
-- [ ] Pagination 分页
-- [ ] Badge 标记
-- [ ] Avatar 头像
-- [ ] Skeleton 骨架屏
-- [ ] Empty 空状态
-- [ ] Description 描述列表
-- [ ] Result 结果
-- [ ] Statistic 统计数值
+- [x] Tag 标签
+- [x] Progress 进度条
+- [x] Tree 树形控件
+- [x] Pagination 分页
+- [x] Badge 标记
+- [x] Avatar 头像
+- [x] Skeleton 骨架屏
+- [x] Empty 空状态
+- [x] Description 描述列表
+- [x] Result 结果
+- [x] Statistic 统计数值
 
 
 #### Notice
