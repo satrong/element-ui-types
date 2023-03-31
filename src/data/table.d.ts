@@ -172,9 +172,9 @@ export type TElTableColumn = TComponent<{
   /** 对应列内容的字段名，也可以使用 property 属性 */
   prop?: string
   /** 对应列的宽度 */
-  width?: string
+  width?: string | number
   /** 对应列的最小宽度，与 width 的区别是 width 是固定的，min-width 会把剩余宽度按比例分配给设置了 min-width 的列 */
-  minWidth?: string
+  minWidth?: string | number
   /** 列是否固定在左侧或者右侧，true 表示固定在左侧 */
   fixed?: boolean | 'left' | 'right'
   /** 列标题 Label 区域渲染使用的 Function */
