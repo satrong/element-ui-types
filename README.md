@@ -59,20 +59,20 @@
 
 #### Navigation
 
-- [ ] NavMenu 导航菜单
-- [ ] Tabs 标签页
-- [ ] Breadcrumb 面包屑
-- [ ] PageHeader 页头
-- [ ] Dropdown 下拉菜单
-- [ ] Steps 步骤条
+- [x] NavMenu 导航菜单
+- [x] Tabs 标签页
+- [x] Breadcrumb 面包屑
+- [x] PageHeader 页头
+- [x] Dropdown 下拉菜单
+- [x] Steps 步骤条
 
 
 #### Others
 
-- [ ] Dialog 对话框
-- [ ] Tooltip 文字提示
-- [ ] Popover 弹出框
-- [ ] Popconfirm 气泡确认框
+- [x] Dialog 对话框
+- [x] Tooltip 文字提示
+- [x] Popover 弹出框
+- [x] Popconfirm 气泡确认框
 - [ ] Card 卡片
 - [ ] Carousel 走马灯
 - [ ] Collapse 折叠面板
