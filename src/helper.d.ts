@@ -27,9 +27,9 @@ Readonly<Pick<Props, 'value'> extends ComponentPropsOptions ? ExtractPropTypes<P
 Readonly<ExtractPropTypes<Omit<Props, 'value'>>>
 >
 
-export type Size = 'medium' | 'small' | 'mini'
+export type Size = 'medium' | 'small' | 'mini' | ''
 
-export type ButtonType = 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text'
+export type ButtonType = 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text' | 'default'
 
 export type ThemeType = 'success' | 'warning' | 'danger' | 'info'
 
