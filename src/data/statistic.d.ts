@@ -10,7 +10,7 @@ import type { TComponent } from '../helper'
  * @version 2.15.11+
  * @link https://element.eleme.cn/#/zh-CN/component/statistic#statistic-attributes
  */
-export type TElStatistic = TComponent<{
+export type ElStatistic = TComponent<{
   /** 数值内容。如果为倒计时模式，则类型为 `string` */
   value: string | number
   /** 设置小数点，默认值 `.` */
@@ -43,9 +43,3 @@ export type TElStatistic = TComponent<{
   /** 暂停倒计时 */
   suspend: (isStop: boolean) => string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElStatistic: TElStatistic
-  }
-}

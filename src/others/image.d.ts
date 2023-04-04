@@ -6,7 +6,7 @@ import type { TComponent } from '../helper'
  * - `error` 加载失败的内容
  * @link https://element.eleme.cn/#/zh-CN/component/image#attributes
  */
-export type TElImage = TComponent<{
+export type ElImage = TComponent<{
   /** 图片源，同原生 */
   src?: string
   /** 确定图片如何适应容器框，同原生 object-fit */
@@ -33,9 +33,3 @@ export type TElImage = TComponent<{
   /** 图片加载失败触发 */
   onError: (e: Error) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElImage: TElImage
-  }
-}

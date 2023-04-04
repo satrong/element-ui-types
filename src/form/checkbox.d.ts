@@ -1,6 +1,6 @@
 import type { TComponent, Size } from '../helper'
 
-export type TElCheckbox = TComponent<{
+export type ElCheckbox = TComponent<{
   /** 绑定值 */
   value?: string | number | boolean
   /** 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效） */
@@ -31,7 +31,7 @@ export type TElCheckbox = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/checkbox#checkbox-group-attributes
  */
-export type TElCheckboxGroup = TComponent<{
+export type ElCheckboxGroup = TComponent<{
   /** 绑定值 */
   value?: any[]
   /** 多选框组尺寸，仅对按钮形式的 Checkbox 或带有边框的 Checkbox 有效 */
@@ -56,7 +56,7 @@ export type TElCheckboxGroup = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/checkbox#checkbox-button-attributes
  */
-export type TElCheckboxButton = TComponent<{
+export type ElCheckboxButton = TComponent<{
   /** 选中状态的值（只有在checkbox-group或者绑定对象类型为array时有效） */
   label: string | number | boolean
   /** 选中时的值 */
@@ -70,11 +70,3 @@ export type TElCheckboxButton = TComponent<{
   /** 当前是否勾选，默认值 `false` */
   checked: boolean
 }>
-
-declare module 'vue' {
-  export interface GlobalComponents {
-    ElCheckbox: TElCheckbox
-    ElCheckboxGroup: TElCheckboxGroup
-    ElCheckboxButton: TElCheckboxButton
-  }
-}

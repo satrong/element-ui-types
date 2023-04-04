@@ -15,9 +15,3 @@ export type ElEmpty = TComponent<{
   /** 文本描述 */
   description: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElEmpty: ElEmpty
-  }
-}

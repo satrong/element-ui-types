@@ -12,21 +12,21 @@ import type { ElImage } from './image'
 import type { ElBacktop } from './backtop'
 import type { ElDrawer } from './drawer'
 
-export type {
-  ElDialog,
-  ElTooltip,
-  ElPopover,
-  ElPopconfirm,
-  ElCard,
-  ElCarousel,
-  ElCarouselItem,
-  ElAccordion,
-  ElAccordionItem,
-  ElTimeline,
-  ElTimelineItem,
-  ElDivider,
-  ElCalendar,
-  ElImage,
-  ElBacktop,
-  ElDrawer
+export interface Others {
+  ElDialog: ElDialog
+  ElTooltip: ElTooltip
+  ElPopover: ElPopover
+  ElPopconfirm: ElPopconfirm
+  ElCard: ElCard
+  ElCarousel: ElCarousel
+  ElCarouselItem: ElCarouselItem
+  ElAccordion: ElAccordion
+  ElAccordionItem: ElAccordionItem
+  ElTimeline: ElTimeline
+  ElTimelineItem: ElTimelineItem
+  ElDivider: ElDivider
+  ElCalendar: ElCalendar
+  ElImage: ElImage
+  ElBacktop: ElBacktop
+  ElDrawer: ElDrawer
 }

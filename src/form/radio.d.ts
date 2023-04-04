@@ -3,7 +3,7 @@ import type { TComponent, Size } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/radio#radio-attributes
  */
-export type TElRadio = TComponent<{
+export type ElRadio = TComponent<{
   /** 绑定值 */
   value?: string | number | boolean
   /** Radio 的 value */
@@ -26,7 +26,7 @@ export type TElRadio = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/radio#radio-group-attributes
  */
-export type TElRadioGroup = TComponent<{
+export type ElRadioGroup = TComponent<{
   /** 绑定值 */
   value?: string | number | boolean
   /** Radio 的尺寸，仅对按钮形式的 Radio 或带有边框的 Radio 有效 */
@@ -47,7 +47,7 @@ export type TElRadioGroup = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/radio#radio-button-attributes
  */
-export type TElRadioButton = TComponent<{
+export type ElRadioButton = TComponent<{
   /** Radio 的 value */
   label: string | number
   /** 是否禁用，默认值 `false` */
@@ -55,11 +55,3 @@ export type TElRadioButton = TComponent<{
   /** 原生 name 属性 */
   name: string
 }>
-
-declare module 'vue' {
-  export interface GlobalComponents {
-    ElRadio: TElRadio
-    ElRadioGroup: TElRadioGroup
-    ElRadioButton: TElRadioButton
-  }
-}

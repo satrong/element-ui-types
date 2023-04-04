@@ -2,12 +2,12 @@ import type { TComponent, Size } from '../helper'
 import type { Rules } from '../async-validator-type'
 
 type TInvalidFields = Record<string, Array<{ message: string, field: string }>>
-type TValidateCallback = (valid: boolean, invalidFields: TInvalidFields) => void
+export type ElFormValidateCallback = (valid: boolean, invalidFields: TInvalidFields) => void
 
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/form#form-attributes
  */
-export type TElForm = TComponent<{
+export type ElForm = TComponent<{
   /** 表单数据对象 */
   model?: Record<string, any>
   /** 表单验证规则 */
@@ -43,7 +43,7 @@ export type TElForm = TComponent<{
   onValidate: (prop: string, valid: boolean, errorMessage: string | null) => void
 }, {
   /** 对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。若不传入回调函数，则会返回一个 promise */
-  validate: ((callback: TValidateCallback) => void) | Promise<boolean>
+  validate: (callback: ElFormValidateCallback) => Promise<boolean>
   /** 对部分表单字段进行校验的方法 */
   validateField: (prop: string | string[], callback: (errorMessage: string) => void) => void
   /** 对整个表单进行重置，将所有字段值重置为初始值并移除校验结果 */
@@ -59,7 +59,7 @@ export type TElForm = TComponent<{
  *  - `error` 自定义表单校验信息的显示方式，参数为 `{ error }`
  * @link https://element.eleme.cn/#/zh-CN/component/form#form-item-slot
  */
-export type TElFormItem = TComponent<{
+export type ElFormItem = TComponent<{
   /** 表单域 model 字段，在使用 `validate`、`resetFields` 方法的情况下，该属性是必填的 */
   prop?: string
   /** 标签文本 */
@@ -84,10 +84,3 @@ export type TElFormItem = TComponent<{
   /** 移除该表单项的校验结果 */
   clearValidate: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElForm: TElForm
-    ElFormItem: TElFormItem
-  }
-}

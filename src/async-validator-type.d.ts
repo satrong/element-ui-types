@@ -1,5 +1,5 @@
 
-export type RuleType =
+type RuleType =
   | 'string'
   | 'number'
   | 'boolean'
@@ -15,9 +15,9 @@ export type RuleType =
   | 'hex'
   | 'email'
 
-export type SyncErrorType = Error | string
-export type SyncValidateResult = boolean | SyncErrorType | SyncErrorType[]
-export type ValidateResult = void | Promise<void> | SyncValidateResult
+type SyncErrorType = Error | string
+type SyncValidateResult = boolean | SyncErrorType | SyncErrorType[]
+type ValidateResult = void | Promise<void> | SyncValidateResult
 
 export interface RuleItem {
   type?: RuleType // default type is 'string'

@@ -6,7 +6,7 @@ import type { TComponent, Placement } from '../helper'
  *  - `reference` 触发 Popover 显示的 HTML 元素
  * @link https://element.eleme.cn/#/zh-CN/component/popover#attributes
  */
-export type TElPopover = TComponent<{
+export type ElPopover = TComponent<{
   /** 状态是否可见，默认值 `false` */
   value?: boolean
   /** 触发方式，默认值 `click` */
@@ -49,9 +49,3 @@ export type TElPopover = TComponent<{
   /** 隐藏动画播放完毕后触发 */
   onAfterLeave: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElPopover: TElPopover
-  }
-}

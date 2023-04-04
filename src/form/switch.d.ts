@@ -3,7 +3,7 @@ import { type TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/switch#attributes
  */
-export type TSwitch = TComponent<{
+export type ElSwitch = TComponent<{
   /** 绑定值 */
   value?: boolean | string | number
   /** 是否禁用 */

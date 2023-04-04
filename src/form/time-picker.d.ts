@@ -4,7 +4,7 @@ import { type TComponent, type Size } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/time-picker#time-select-options
  */
-interface TimeSelectOptions {
+export interface ElTimeSelectOptions {
   /** 开始时间，默认值 `09:00` */
   start?: string
   /** 结束时间，默认值 `18:00` */
@@ -20,7 +20,7 @@ interface TimeSelectOptions {
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/time-picker#time-picker-options
  */
-interface TimePickerOptions {
+export interface ElTimePickerOptions {
   /** 可选时间段，例如'18:30:00 - 20:30:00'或者传入数组['09:30:00 - 12:00:00', '14:30:00 - 18:30:00'] */
   selectableRange?: string | string[]
   /**
@@ -36,7 +36,7 @@ interface TimePickerOptions {
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/time-picker#attributes
  */
-export type TTimePicker = TComponent<{
+export type ElTimePicker = TComponent<{
   /** 绑定值， _TimePicker_ 类型为 `Date`， _TimeSelect_ 类型为 `string` */
   value?: Date | string
   /** 完全只读，默认值 `false` */
@@ -64,7 +64,7 @@ export type TTimePicker = TComponent<{
   /** _TimePicker_ 下拉框的类名 */
   popperClass?: string
   /** 当前时间日期选择器特有的选项参考下表，默认值 `{}` */
-  pickerOptions?: TimeSelectOptions | TimePickerOptions
+  pickerOptions?: ElTimeSelectOptions | ElTimePickerOptions
   /** 选择范围时的分隔符，默认值 `'-'` */
   rangeSeparator?: string
   /** 可选，仅 _TimePicker_ 时可用，绑定值的格式。不指定则绑定值为 Date 对象 */
@@ -96,9 +96,3 @@ export type TTimePicker = TComponent<{
   /** 使 input 获取焦点 */
   focus: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTimePicker: TTimePicker
-  }
-}

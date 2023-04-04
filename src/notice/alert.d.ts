@@ -6,7 +6,7 @@ import type { TComponent, NoticeType, EffectType } from '../helper'
  *  - `title` 标题的内容
  * @link https://element.eleme.cn/#/zh-CN/component/alert#attributes
  */
-export type TElAlert = TComponent<{
+export type ElAlert = TComponent<{
   /** 标题 */
   title?: string
   /** 主题，默认值 `info` */
@@ -26,9 +26,3 @@ export type TElAlert = TComponent<{
   /** 关闭 alert 时触发的事件 **/
   onClose: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElAlert: TElAlert
-  }
-}

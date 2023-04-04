@@ -5,7 +5,7 @@ import type { TComponent } from '../helper'
  *  - `default` 自定义内容，需要在 layout 中列出 slot
  * @link https://element.eleme.cn/#/zh-CN/component/pagination#attributes
  */
-export type TElPagination = TComponent<{
+export type ElPagination = TComponent<{
   /** 是否使用小型分页样式，默认值 `false` */
   small?: boolean
   /** 是否为分页按钮添加背景色，默认值 `false` */
@@ -55,9 +55,3 @@ export type TElPagination = TComponent<{
    */
   onNextChange?: (currentPage: number) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElPagination: TElPagination
-  }
-}

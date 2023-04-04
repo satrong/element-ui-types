@@ -3,7 +3,7 @@ import type { TComponent, Size } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/color-picker#attributes
  */
-export type TElColorPicker = TComponent<{
+export type ElColorPicker = TComponent<{
   /** 绑定值 */
   value?: string
   /** 是否禁用，默认值 `false` */
@@ -29,9 +29,3 @@ export type TElColorPicker = TComponent<{
    */
   onActiveChange: (value: string) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElColorPicker: TElColorPicker
-  }
-}

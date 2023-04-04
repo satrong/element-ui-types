@@ -1,7 +1,7 @@
 import type { CreateElement, VNode } from 'vue'
 import type { TComponent, Size, EffectType } from '../helper'
 
-interface TreeNode<T> {
+export interface ElTableTreeNode<T> {
   children: T[]
   display: boolean
   expanded: boolean
@@ -13,18 +13,18 @@ interface TreeNode<T> {
 
 type CssStyle = Record<string, string>
 
-export type TableSummaryMethod<Data = any, Column = any> = (param: { columns: Column[], data: Data[] }) => any[]
+export type ElTableSummaryMethod<Data = any, Column = any> = (param: { columns: Column[], data: Data[] }) => any[]
 
-export type TableSpanMethod<Row = any, Column = any> = (param: { row: Row, column: Column, rowIndex: number, columnIndex: number }) => [number, number] | { rowspan: number, colspan: number }
+export type ElTableSpanMethod<Row = any, Column = any> = (param: { row: Row, column: Column, rowIndex: number, columnIndex: number }) => [number, number] | { rowspan: number, colspan: number }
 
-export type TableLoad<Row = any> = (row: Row, treeNode: TreeNode<Row>, resolve: (data: Row[]) => void) => void
+export type ElTableLoad<Row = any> = (row: Row, treeNode: ElTableTreeNode<Row>, resolve: (data: Row[]) => void) => void
 
 /**
  * ## Slot
  *  - `append` 插入至表格最后一行之后的内容，如果需要对表格的内容进行无限滚动操作，可能需要用到这个 slot。若表格有合计行，该 slot 会位于合计行之上。
  * @link https://element.eleme.cn/#/zh-CN/component/table#table-attributes
  */
-export type TElTable = TComponent<{
+export type ElTable = TComponent<{
   /** 显示的数据 */
   data: any[]
   /** Table 的高度，默认为自动高度。如果 height 为 number 类型，单位 px；如果 height 为 string 类型，则这个高度会设置为 Table 的 style.height 的值，Table 的高度会受控于外部样式。 */
@@ -81,9 +81,9 @@ export type TElTable = TComponent<{
   /** 合计行第一列的文本，默认值 `合计` */
   sumText?: string
   /** 自定义的合计计算方法 */
-  summaryMethod?: TableSummaryMethod
+  summaryMethod?: ElTableSummaryMethod
   /** 合并行或列的计算方法 */
-  spanMethod?: TableSpanMethod
+  spanMethod?: ElTableSpanMethod
   /** 在多选表格中，当仅有部分行被选中时，点击表头的多选框时的行为。若为 true，则选中所有行；若为 false，则取消选择所有行，默认值 `true` */
   selectOnIndeterminate?: boolean
   /** 展示树形数据时，树节点的缩进，默认值 `16` */
@@ -91,7 +91,7 @@ export type TElTable = TComponent<{
   /** 是否懒加载子节点数据，默认值 `false` */
   lazy?: boolean
   /** 加载子节点数据的函数，lazy 为 true 时生效，函数第二个参数包含了节点的层级信息 */
-  load?: TableLoad
+  load?: ElTableLoad
   /** 渲染嵌套数据的配置选项 */
   treeProps?: {
     hasChildren: string
@@ -160,7 +160,7 @@ export type TElTable = TComponent<{
  *  - `header` 自定义表头的内容. 参数为 `{ column, $index }`
  * @link https://element.eleme.cn/#/zh-CN/component/table#table-column-attributes
  */
-export type TElTableColumn = TComponent<{
+export type ElTableColumn = TComponent<{
   /** 对应列的类型。如果设置了 selection 则显示多选框；如果设置了 index 则显示该行的索引（从 1 开始计算）；如果设置了 expand 则显示为一个可展开的按钮 */
   type?: 'selection' | 'index' | 'expand'
   /** 如果设置了 type=index，可以通过传递 index 属性来自定义索引 */
@@ -216,10 +216,3 @@ export type TElTableColumn = TComponent<{
   /** 选中的数据过滤项，如果需要自定义表头过滤的渲染方式，可能会需要此属性。 */
   filteredValue?: any[]
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTable: TElTable
-    ElTableColumn: TElTableColumn
-  }
-}

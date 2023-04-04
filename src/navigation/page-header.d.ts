@@ -6,7 +6,7 @@ import type { TComponent } from '../helper'
  *  - `content` 内容
  * @link https://element.eleme.cn/#/zh-CN/component/page-header#attributes
  */
-export type TElPageHeader = TComponent<{
+export type ElPageHeader = TComponent<{
   /** 标题，默认值 `返回` */
   title?: string
   /** 内容 */
@@ -14,9 +14,3 @@ export type TElPageHeader = TComponent<{
   /** 点击左侧区域触发 */
   onBack: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElPageHeader: TElPageHeader
-  }
-}

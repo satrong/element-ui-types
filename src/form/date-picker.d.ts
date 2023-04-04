@@ -1,7 +1,7 @@
 import type { Component } from 'vue'
 import type { TComponent, Size } from '../helper'
 
-export interface DatePickerShortcut {
+export interface ElDatePickerShortcut {
   /** 标题文本 */
   text: string
   /** 选中后的回调函数，参数是 vm，可通过触发 'pick' 事件设置选择器的值。例如 vm.$emit('pick', new Date()) */
@@ -11,9 +11,9 @@ export interface DatePickerShortcut {
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/date-picker#picker-options
  */
-export interface DatePickerOptions {
+export interface ElDatePickerOptions {
   /** 设置快捷选项，需要传入 `{ text, onClick }` */
-  shortcuts?: DatePickerShortcut[]
+  shortcuts?: ElDatePickerShortcut[]
   /** 设置禁用状态，参数为当前日期，要求返回 Boolean */
   disabledDate?: (date: Date) => boolean
   /** 设置日期的 className */
@@ -27,7 +27,7 @@ export interface DatePickerOptions {
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/date-picker#attributes
  */
-export type TDatePicker = TComponent<{
+export type ElDatePicker = TComponent<{
   /** 绑定值， _DatePicker_ 类型为 `Date`， _DateRangePicker_ 类型为 `Date[]` */
   value?: Date | Date[] | string
   /** 完全只读，默认值 `false` */
@@ -55,7 +55,7 @@ export type TDatePicker = TComponent<{
   /** DatePicker 下拉框的类名 */
   popperClass?: string
   /** 当前时间日期选择器特有的选项 */
-  pickerOptions?: DatePickerOptions
+  pickerOptions?: ElDatePickerOptions
   /** 选择范围时的分隔符，默认值 `'-'` */
   rangeSeparator?: string
   /** 可选，选择器打开时默认显示的时间 */
@@ -89,9 +89,3 @@ export type TDatePicker = TComponent<{
   /** 使 input 获取焦点 */
   focus: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElDatePicker: TDatePicker
-  }
-}

@@ -4,7 +4,7 @@ import type { NoticeType } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/message#options
  */
-export interface IElMessage {
+export interface ElMessageOptions {
   /** 消息文字 */
   message?: string | VNode
   /** 主题，默认值 `info` */

@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/menu#menu-attribute
  */
-export type TMenu = TComponent<{
+export type ElMenu = TComponent<{
   /** 模式，默认值 `vertical` */
   mode?: 'horizontal' | 'vertical'
   /** 是否水平折叠收起菜单（仅在 mode 为 vertical 时可用），默认值 `false` */
@@ -60,7 +60,7 @@ export type TMenu = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/menu#submenu-attribute
  */
-export type TElSubMenu = TComponent<{
+export type ElSubMenu = TComponent<{
   /** 唯一标志，默认值 `null` */
   index?: string
   /** 弹出菜单的自定义类名 */
@@ -78,7 +78,7 @@ export type TElSubMenu = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/menu#menu-item-attribute
  */
-export type TElMenuItem = TComponent<{
+export type ElMenuItem = TComponent<{
   /** 唯一标志 */
   index?: string
   /** Vue Router 路径对象 */
@@ -90,16 +90,7 @@ export type TElMenuItem = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/menu#menu-group-attribute
  */
-export type TElMenuItemGroup = TComponent<{
+export type ElMenuItemGroup = TComponent<{
   /** 分组标题 */
   title?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElMenu: TMenu
-    ElSubMenu: TElSubMenu
-    ElMenuItem: TElMenuItem
-    ElMenuItemGroup: TElMenuItemGroup
-  }
-}

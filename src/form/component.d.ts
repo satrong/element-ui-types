@@ -14,36 +14,29 @@ import type { ElColorPicker } from './color-picker'
 import type { ElTransfer } from './transfer'
 import type { ElForm, ElFormItem } from './form'
 
-export type { ElCascaderProps } from './cascader'
-export type { ElTimePickerOptions, ElTimeSelectOptions } from './time-picker'
-export type { ElDatePickerOptions, ElDatePickerShortcut } from './date-picker'
-export type { ElUploadFile, ElUploadHttpRequestOptions } from './upload'
-export type { ElTransferItem } from './transfer'
-export type { ElFormValidateCallback } from './form'
-
-export type {
-  ElCheckbox,
-  ElCheckboxGroup,
-  ElCheckboxButton,
-  ElRadio,
-  ElRadioGroup,
-  ElRadioButton,
-  ElInput,
-  ElAutocomplete,
-  ElInputNumber,
-  ElSelect,
-  ElOptionGroup,
-  ElOption,
-  ElCascader,
-  ElCascaderPanel,
-  ElSwitch,
-  ElSlider,
-  ElTimePicker,
-  ElDatePicker,
-  ElUpload,
-  ElRate,
-  ElColorPicker,
-  ElTransfer,
-  ElForm,
-  ElFormItem
+export interface Form {
+  ElCheckbox: ElCheckbox
+  ElCheckboxGroup: ElCheckboxGroup
+  ElCheckboxButton: ElCheckboxButton
+  ElRadio: ElRadio
+  ElRadioGroup: ElRadioGroup
+  ElRadioButton: ElRadioButton
+  ElInput: ElInput
+  ElAutocomplete: ElAutocomplete
+  ElInputNumber: ElInputNumber
+  ElSelect: ElSelect
+  ElOptionGroup: ElOptionGroup
+  ElOption: ElOption
+  ElCascader: ElCascader
+  ElCascaderPanel: ElCascaderPanel
+  ElSwitch: ElSwitch
+  ElSlider: ElSlider
+  ElTimePicker: ElTimePicker
+  ElDatePicker: ElDatePicker
+  ElUpload: ElUpload
+  ElRate: ElRate
+  ElColorPicker: ElColorPicker
+  ElTransfer: ElTransfer
+  ElForm: ElForm
+  ElFormItem: ElFormItem
 }

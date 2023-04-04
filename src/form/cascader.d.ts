@@ -4,7 +4,7 @@ import { type TComponent, type Size } from '../helper'
  * Cascader 级联选择器 配置选项
  * @link https://element.eleme.cn/#/zh-CN/component/cascader#props
  */
-export interface CascaderProps {
+export interface ElCascaderProps {
   /** 次级菜单的展开方式，默认值 `click` */
   expandTrigger?: 'click' | 'hover'
   /** 是否多选，默认值 `false` */
@@ -35,13 +35,13 @@ export interface CascaderProps {
  *  - `empty` - 自定义空数据时的内容
  * @link https://element.eleme.cn/#/zh-CN/component/cascader#cascader-attributes
  */
-export type TCascader = TComponent<{
+export type ElCascader = TComponent<{
   /** 选中项绑定值 */
   value?: any
   /** 可选项数据源，键名可通过 Props 属性配置 */
   options?: any[]
   /** 配置选项 */
-  props?: CascaderProps
+  props?: ElCascaderProps
   /** 尺寸 */
   size?: Size
   /** 输入框占位文本，默认值 `请选择` */
@@ -113,7 +113,7 @@ export type ElCascaderPanel = TComponent<{
   /** 可选项数据源，键名可通过 Props 属性配置 */
   options?: any[]
   /** 配置选项 */
-  props?: CascaderProps
+  props?: ElCascaderProps
   /**
    * 当选中节点变化时触发
    * @param value 选中节点的值
@@ -125,9 +125,3 @@ export type ElCascaderPanel = TComponent<{
    */
   onExpandChange?: (value: any[]) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElCascader: TCascader
-  }
-}

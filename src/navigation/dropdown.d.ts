@@ -6,7 +6,7 @@ import type { TComponent, Size, ButtonType } from '../helper'
  *  - `dropdown` 下拉列表，通常是 <el-dropdown-menu> 组件
  * @link https://element.eleme.cn/#/zh-CN/component/dropdown#dropdown-attributes
  */
-export type TElDropdown = TComponent<{
+export type ElDropdown = TComponent<{
   /** 菜单按钮类型，同 Button 组件(只在split-button为 true 的情况下有效) */
   type?: ButtonType
   /** 菜单尺寸，在split-button为 true 的情况下也对触发按钮生效 */
@@ -44,7 +44,7 @@ export type TElDropdown = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/dropdown#dropdown-menu-item-attributes
  */
-export type TElDropdownItem = TComponent<{
+export type ElDropdownItem = TComponent<{
   /** 指令 */
   command?: any
   /** 禁用，默认值 `false` */
@@ -54,10 +54,3 @@ export type TElDropdownItem = TComponent<{
   /** 图标类名 */
   icon?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElDropdown: TElDropdown
-    ElDropdownItem: TElDropdownItem
-  }
-}

@@ -9,7 +9,7 @@ import type { TComponent, Size } from '../helper'
  *
  * @link https://element.eleme.cn/#/zh-CN/component/input#input-attributes
  */
-export type TElInput = TComponent<{
+export type ElInput = TComponent<{
   /** 绑定值 */
   value?: string | number
   /** 输入框类型 */
@@ -91,7 +91,7 @@ export type TElInput = TComponent<{
  *
  * @link https://element.eleme.cn/#/zh-CN/component/input#autocomplete-attributes
  */
-export type TElAutocomplete = TComponent<{
+export type ElAutocomplete = TComponent<{
   /** 输入框占位文本 */
   placeholder: string
   /** 禁用，默认值 `false` */
@@ -137,10 +137,3 @@ export type TElAutocomplete = TComponent<{
   /** 使 input 获取焦点 */
   focus: () => void
 }>
-
-declare module 'vue' {
-  export interface GlobalComponents {
-    ElInput: TElInput
-    ElAutocomplete: TElAutocomplete
-  }
-}

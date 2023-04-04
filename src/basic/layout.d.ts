@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/layout#row-attributes
  */
-export type TElRow = TComponent<{
+export type ElRow = TComponent<{
   /** 栅格间隔，默认值 `0` */
   gutter?: number
   /** 布局模式，可选 `flex`，现代浏览器下有效 */
@@ -19,7 +19,7 @@ export type TElRow = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/layout#col-attributes
  */
-export type TElCol = TComponent<{
+export type ElCol = TComponent<{
   /** 栅格占据的列数，默认值 `24` */
   span?: number
   /** 栅格左侧的间隔格数，默认值 `0` */
@@ -41,10 +41,3 @@ export type TElCol = TComponent<{
   /** 自定义元素标签，默认值 `div` */
   tag?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElRow: TElRow
-    ElCol: TElCol
-  }
-}

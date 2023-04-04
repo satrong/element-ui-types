@@ -6,7 +6,7 @@ import type { TComponent } from '../helper'
  *  - `template` 用来展示自定义占位符
  * @link https://element.eleme.cn/#/zh-CN/component/skeleton#skeleton-attributes
  */
-export type TElSkeleton = TComponent<{
+export type ElSkeleton = TComponent<{
   /** 是否使用动画，默认值 `false` */
   animated?: boolean
   /** 渲染多少个 template, 建议使用尽可能小的数字，默认值 `1` */
@@ -22,14 +22,7 @@ export type TElSkeleton = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/skeleton#skeleton-item-attributes
  */
-export type TElSkeletonItem = TComponent<{
+export type ElSkeletonItem = TComponent<{
   /** 当前显示的占位元素的样式，默认值 `text` */
   variant: 'p' | 'h1' | 'h3' | 'text' | 'caption' | 'button' | 'image' | 'circle' | 'rect'
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElSkeleton: TElSkeleton
-    ElSkeletonItem: TElSkeletonItem
-  }
-}

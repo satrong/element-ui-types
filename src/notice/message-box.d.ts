@@ -6,7 +6,7 @@ type TMessageBoxAction = 'confirm' | 'cancel' | 'close'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/message-box#options
  */
-export interface IElMessageBoxOptions {
+export interface ElMessageBoxOptions {
   /** MessageBox 标题 */
   title?: string
   /** MessageBox 消息正文内容 */

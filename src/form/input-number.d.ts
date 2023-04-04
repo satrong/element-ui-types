@@ -4,7 +4,7 @@ import type { TComponent, Size } from '../helper'
  * InputNumber 计数器
  * @link https://element.eleme.cn/#/zh-CN/component/input-number#attributes
  */
-export type TElInputNumber = TComponent<{
+export type ElInputNumber = TComponent<{
   /** 绑定值，默认值 `0` */
   value?: number
   /** 设置计数器允许的最小值，默认值 `-Infinity` */
@@ -43,9 +43,3 @@ export type TElInputNumber = TComponent<{
   /** 选中 input 中的文字 */
   blur: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElInputNumber: TElInputNumber
-  }
-}

@@ -1,7 +1,7 @@
 import type { CreateElement, VNode } from 'vue'
 import type { TComponent } from '../helper'
 
-interface IItem {
+export interface ElTransferItem {
   key: any
   label: string
   disabled: boolean
@@ -17,17 +17,17 @@ type TWhich = 'left' | 'right'
  *  - `right-footer` 右侧列表底部的内容
  * @link https://element.eleme.cn/#/zh-CN/component/transfer#attributes
  */
-export type TElTransfer = TComponent<{
+export type ElTransfer = TComponent<{
   /** 绑定值 */
   value?: any[]
   /** Transfer 的数据源 */
-  data?: IItem[]
+  data?: ElTransferItem[]
   /** 是否可搜索，默认值 `false` */
   filterable?: boolean
   /** 搜索框占位符，默认值 `请输入搜索内容` */
   filterPlaceholder?: string
   /** 自定义搜索方法 */
-  filterMethod?: (query: string, items: IItem) => boolean
+  filterMethod?: (query: string, item: ElTransferItem) => boolean
   /** 右侧列表元素的排序策略：若为 `original`，则保持与数据源相同的顺序；若为 `push`，则新加入的元素排在最后；若为 `unshift`，则新加入的元素排在最前，默认值 `original` */
   targetOrder?: 'original' | 'push' | 'unshift'
   /** 自定义列表标题 */
@@ -35,7 +35,7 @@ export type TElTransfer = TComponent<{
   /** 自定义按钮文案 */
   buttonTexts?: [string, string]
   /** 自定义数据项渲染函数 */
-  renderContent?: (h: CreateElement, option: IItem) => VNode
+  renderContent?: (h: CreateElement, option: ElTransferItem) => VNode
   /** 列表顶部勾选状态文案，默认值 `{ noChecked: '${checked}/${total}', hasChecked: '${checked}/${total}'` */
   format: { noChecked: string, hasChecked: string }
   /** 数据源的字段别名 */
@@ -68,9 +68,3 @@ export type TElTransfer = TComponent<{
    */
   clearQuery: (which: TWhich) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTransfer: TElTransfer
-  }
-}

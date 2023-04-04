@@ -3,7 +3,7 @@ import type { TComponent, Size, ThemeType, EffectType } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/tag#attributes
  */
-export type TElTag = TComponent<{
+export type ElTag = TComponent<{
   type: ThemeType
   /** 是否可关闭，默认值 `false` */
   closable: boolean
@@ -22,9 +22,3 @@ export type TElTag = TComponent<{
   /** 关闭 Tag 时触发的事件 */
   onClose: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTag: TElTag
-  }
-}

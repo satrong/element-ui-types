@@ -7,7 +7,7 @@ import type { TComponent, Size } from '../helper'
  *  - `default` Option 组件列表
  * @link https://element.eleme.cn/#/zh-CN/component/select#select-attributes
  */
-export type TElSelect = TComponent<{
+export type ElSelect = TComponent<{
   value?: string | number | boolean
   /** 是否多选，默认值 `false` */
   multiple: boolean
@@ -106,11 +106,3 @@ export type ElOption = TComponent<{
   /** 是否禁用该选项，默认值 `false` */
   disabled: boolean
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElSelect: TElSelect
-    ElOptionGroup: ElOptionGroup
-    ElOption: ElOption
-  }
-}

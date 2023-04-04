@@ -3,7 +3,7 @@ import type { TComponent, ButtonType } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/link#attributes
  */
-export type TElLink = TComponent<{
+export type ElLink = TComponent<{
   /** 类型 */
   type?: Exclude<ButtonType, 'text'>
   /** 是否下划线，默认值 `true` */
@@ -15,9 +15,3 @@ export type TElLink = TComponent<{
   /** 图标类名 */
   icon?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElLink: TElLink
-  }
-}

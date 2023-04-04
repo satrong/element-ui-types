@@ -3,7 +3,7 @@ import type { TComponent, ThemeType } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/timeline#timeline-attributes
  */
-export type TElTimeline = TComponent<{
+export type ElTimeline = TComponent<{
   /** 指定节点排序方向，默认为正序，默认值 `false` */
   reverse?: boolean
 }>
@@ -14,7 +14,7 @@ export type TElTimeline = TComponent<{
  *  - `dot` 自定义节点
  * @linkhttps://element.eleme.cn/#/zh-CN/component/timeline#timeline-item-attributes
  */
-export type TElTimelineItem = TComponent<{
+export type ElTimelineItem = TComponent<{
   /** 时间戳 */
   timestamp?: string
   /** 是否隐藏时间戳，默认值 `false` */
@@ -30,10 +30,3 @@ export type TElTimelineItem = TComponent<{
   /** 节点图标 */
   icon?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTimeline: TElTimeline
-    ElTimelineItem: TElTimelineItem
-  }
-}

@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/backtop#attributes
  */
-export type TElBacktop = TComponent<{
+export type ElBacktop = TComponent<{
   /** 触发滚动的对象 */
   target?: string
   /** 滚动高度达到此参数值才出现，默认值 `200` */
@@ -15,9 +15,3 @@ export type TElBacktop = TComponent<{
   /** 点击按钮触发的事件 */
   onClick: (e: Event) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElBacktop: TElBacktop
-  }
-}

@@ -4,7 +4,7 @@ import type { NoticeType } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/notification#options
  */
-export interface IElNotification {
+export interface ElNotificationOptions {
   /** 标题 */
   title?: string
   /** 说明文字 */

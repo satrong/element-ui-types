@@ -5,7 +5,7 @@ import type { TComponent } from '../helper'
  *  - `reference` 触发 Popconfirm 显示的 HTML 元素
  * @link https://element.eleme.cn/#/zh-CN/component/popconfirm#attributes
  */
-export type TElPopconfirm = TComponent<{
+export type ElPopconfirm = TComponent<{
   /** 标题 */
   title?: string
   /** 确认按钮文字 */
@@ -27,9 +27,3 @@ export type TElPopconfirm = TComponent<{
   /** 点击取消按钮时触发 */
   onCancel: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElPopconfirm: TElPopconfirm
-  }
-}

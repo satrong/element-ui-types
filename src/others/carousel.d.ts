@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/carousel#carousel-attributes
  */
-export type TElCarousel = TComponent<{
+export type ElCarousel = TComponent<{
   /** 走马灯的高度 */
   height?: string
   /** 初始状态激活的幻灯片的索引，从 0 开始，默认值 `0` */
@@ -44,16 +44,9 @@ export type TElCarousel = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/carousel#carousel-item-attributes
  */
-export type TElCarouselItem = TComponent<{
+export type ElCarouselItem = TComponent<{
   /** 幻灯片的名字，可用作 setActiveItem 的参数 */
   name?: string
   /** 该幻灯片所对应指示器的文本 */
   label?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElCarousel: TElCarousel
-    ElCarouselItem: TElCarouselItem
-  }
-}

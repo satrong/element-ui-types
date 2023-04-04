@@ -4,7 +4,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/tabs#tabs-attributes
  */
-export type TElTabs = TComponent<{
+export type ElTabs = TComponent<{
   /** 绑定值，选中选项卡的 name，默认值为 第一个选项卡的 name */
   value?: string
   /** 风格类型 */
@@ -40,7 +40,7 @@ export type TElTabs = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/tabs#tab-pane-attributes
  */
-export type TElTabPane = TComponent<{
+export type ElTabPane = TComponent<{
   /** 选项卡标题 */
   label?: string
   /** 是否禁用，默认值 `false` */
@@ -55,10 +55,3 @@ export type TElTabPane = TComponent<{
   /** 标签是否延迟渲染，默认值 `false` */
   lazy?: boolean
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTabs: TElTabs
-    ElTabPane: TElTabPane
-  }
-}

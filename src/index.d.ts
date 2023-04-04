@@ -1,5 +1,5 @@
-export * from './helper'
-export * from './async-validator-type'
+export type { ButtonType, EffectType, NoticeType, Placement, Size, ThemeType } from './helper'
+export type { Rule, RuleItem, Rules } from './async-validator-type'
 export * from './basic/index'
 export * from './form/index'
 export * from './data/index'

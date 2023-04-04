@@ -5,7 +5,7 @@ import type { TComponent } from '../helper'
  *  - `default` 自定义头像展示内容
  * @link https://element.eleme.cn/#/zh-CN/component/avatar#attributes
  */
-export type TElAvatar = TComponent<{
+export type ElAvatar = TComponent<{
   /** 设置头像的图标类型，参考 Icon 组件 */
   icon: string
   /** 设置头像的大小，默认值 `large` */
@@ -23,9 +23,3 @@ export type TElAvatar = TComponent<{
   /** 图片类头像加载失败的回调， 返回 false 会关闭组件默认的 fallback 行为 */
   onError: (e: Event) => boolean
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElAvatar: TElAvatar
-  }
-}

@@ -3,13 +3,13 @@ import type { ElContainer, ElAside, ElHeader, ElFooter } from './container'
 import type { ElButton } from './button'
 import type { ElLink } from './link'
 
-export type {
-  ElRow,
-  ElCol,
-  ElContainer,
-  ElHeader,
-  ElAside,
-  ElFooter,
-  ElButton,
-  ElLink
+export interface Basic {
+  ElRow: ElRow
+  ElCol: ElCol
+  ElContainer: ElContainer
+  ElHeader: ElHeader
+  ElAside: ElAside
+  ElFooter: ElFooter
+  ElButton: ElButton
+  ElLink: ElLink
 }

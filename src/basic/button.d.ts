@@ -3,7 +3,7 @@ import type { TComponent, Size, ButtonType } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/button#attributes
  */
-export type TElButton = TComponent<{
+export type ElButton = TComponent<{
   /** 尺寸 */
   size?: Size
   /** 类型 */
@@ -25,9 +25,3 @@ export type TElButton = TComponent<{
   /** 原生 type 属性，默认值 `button` */
   nativeType?: 'button' | 'submit' | 'reset'
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElButton: TElButton
-  }
-}

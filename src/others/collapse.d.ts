@@ -5,7 +5,7 @@ type AccordionValue = string | number
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/collapse#collapse-attributes
  */
-export type TElAccordion = TComponent<{
+export type ElAccordion = TComponent<{
   /** 当前激活的面板(如果是手风琴模式，绑定值类型需要为string，否则为array) */
   value?: AccordionValue | AccordionValue[]
   /** 是否手风琴模式，默认值 `false` */
@@ -19,7 +19,7 @@ export type TElAccordion = TComponent<{
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/collapse#collapse-item-attributes
  */
-export type TElAccordionItem = TComponent<{
+export type ElAccordionItem = TComponent<{
   /** 唯一标志符 */
   name?: AccordionValue
   /** 面板标题 */
@@ -27,10 +27,3 @@ export type TElAccordionItem = TComponent<{
   /** 是否禁用 */
   disabled?: boolean
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElAccordion: TElAccordion
-    ElAccordionItem: TElAccordionItem
-  }
-}

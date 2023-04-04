@@ -90,7 +90,7 @@ export type ElTreeNodeDropHandler<T = any> = (draggingNode: ElTreeNode<T>, dropN
  *  - `default` 自定义树节点的内容，参数为 `{ node, data }`
  * @link https://element.eleme.cn/#/zh-CN/component/tree#attributes
  */
-export type TElTree = TComponent<{
+export type ElTree = TComponent<{
   /** 展示数据 */
   data?: any[]
   /** 内容为空的时候展示的文本 */
@@ -341,9 +341,3 @@ export type TElTree = TComponent<{
    */
   insertAfter: (data: any, refNode: any | ElTreeNode) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTree: TElTree
-  }
-}

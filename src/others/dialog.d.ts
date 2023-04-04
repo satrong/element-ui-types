@@ -7,7 +7,7 @@ import type { TComponent } from '../helper'
  *  - `footer` Dialog 按钮操作区的内容
  * @link https://element.eleme.cn/#/zh-CN/component/dialog#attributes
  */
-export type TElDialog = TComponent<{
+export type ElDialog = TComponent<{
   /** 是否显示 Dialog，支持 .sync 修饰符，默认值 `false` */
   visible?: boolean
   /** Dialog 的标题，也可通过具名 slot （见下表）传入 */
@@ -49,9 +49,3 @@ export type TElDialog = TComponent<{
   /** Dialog 关闭动画结束时的回调 */
   onClosed: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElDialog: TElDialog
-  }
-}

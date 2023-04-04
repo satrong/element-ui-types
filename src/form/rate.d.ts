@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/rate#attributes
  */
-export type TElRate = TComponent<{
+export type ElRate = TComponent<{
   /** 绑定值，默认值 `0` */
   value?: number
   /** 最大分值，默认值 `5` */
@@ -44,9 +44,3 @@ export type TElRate = TComponent<{
    */
   onChange: (value: number) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElRate: TElRate
-  }
-}

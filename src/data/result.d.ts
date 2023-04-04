@@ -8,7 +8,7 @@ import type { TComponent, NoticeType } from '../helper'
  *  - `extra` 自定义底部额外区域
  * @link https://element.eleme.cn/#/zh-CN/component/result#result-attributes
  */
-export type TElResult = TComponent<{
+export type ElResult = TComponent<{
   /** 标题 */
   title?: string
   /** 二级标题 */
@@ -16,9 +16,3 @@ export type TElResult = TComponent<{
   /** 图标类型，默认值 `info` */
   icon?: NoticeType
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElResult: TElResult
-  }
-}

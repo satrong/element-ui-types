@@ -6,7 +6,7 @@ import type { TComponent } from '../helper'
  *  - `title` Drawer 标题区的内容
  * @link https://element.eleme.cn/#/zh-CN/component/drawer#drawer-attributes
  */
-export type TElDrawer = TComponent<{
+export type ElDrawer = TComponent<{
   /** Drawer 自身是否插入至 body 元素上。嵌套的 Drawer 必须指定该属性并赋值为 true，默认值 `false` */
   appendToBody?: boolean
   /** 关闭前的回调，会暂停 Drawer 的关闭 */
@@ -47,9 +47,3 @@ export type TElDrawer = TComponent<{
   /** 用于关闭 Drawer, 该方法会调用传入的 before-close 方法 */
   closeDrawer: () => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElDrawer: TElDrawer
-  }
-}

@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/progress#attributes
  */
-export type TElProgress = TComponent<{
+export type ElProgress = TComponent<{
   /** 百分比（必填），取值 `0` 到 `100`，默认值 `0` */
   percentage: number
   /** 进度条类型，可选值为 `line`、`circle`、`dashboard`，默认值 `line` */
@@ -29,9 +29,3 @@ export type TElProgress = TComponent<{
   /** 指定进度条字体颜色（支持 hex 格式） */
   textColor?: string
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElProgress: TElProgress
-  }
-}

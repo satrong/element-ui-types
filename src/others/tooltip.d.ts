@@ -35,9 +35,3 @@ export type ElTooltip = TComponent<{
   /** Tooltip 组件的 tabindex，默认值 `0` */
   tabindex?: number
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElTooltip: ElTooltip
-  }
-}

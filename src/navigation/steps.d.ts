@@ -3,7 +3,7 @@ import type { TComponent } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/steps#steps-attributes
  */
-export type TElSteps = TComponent<{
+export type ElSteps = TComponent<{
   /** 每个 step 的间距，不填写将自适应间距。支持百分比 */
   space?: number | string
   /** 显示方向，默认值 `horizontal` */
@@ -27,7 +27,7 @@ export type TElSteps = TComponent<{
  *  - `description` 自定义描述性文字
  * @link https://element.eleme.cn/#/zh-CN/component/steps#step-attributes
  */
-export type TElStep = TComponent<{
+export type ElStep = TComponent<{
   /** 标题 */
   title?: string
   /** 描述性文字 */
@@ -37,10 +37,3 @@ export type TElStep = TComponent<{
   /** 设置当前步骤的状态，不设置则根据 steps 确定状态 */
   status?: 'wait' | 'process' | 'finish' | 'error' | 'success'
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElSteps: TElSteps
-    ElStep: TElStep
-  }
-}

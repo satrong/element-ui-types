@@ -6,7 +6,7 @@ import type { TComponent, Size } from '../helper'
  *  - `extra` 自定义操作区，显示在右上方
  * @link https://element.eleme.cn/#/zh-CN/component/descriptions#descriptions-attributes
  */
-export type TElDescriptions = TComponent<{
+export type ElDescriptions = TComponent<{
   /** 是否带有边框，默认值 `false` */
   border?: boolean
   /** 一行 Descriptions Item 的数量，默认值 `3` */
@@ -36,7 +36,7 @@ export type TElDescriptions = TComponent<{
  *  - `label` 自定义标签文本
  * @link https://element.eleme.cn/#/zh-CN/component/descriptions#descriptions-item-attributes
  */
-export type TElDescriptionsItem = TComponent<{
+export type ElDescriptionsItem = TComponent<{
   /** 标签文本 */
   label?: string
   /** 列的数量 */
@@ -50,10 +50,3 @@ export type TElDescriptionsItem = TComponent<{
   /** 自定义内容样式 */
   contentStyle?: Record<string, string>
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElDescriptions: TElDescriptions
-    ElDescriptionsItem: TElDescriptionsItem
-  }
-}

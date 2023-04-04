@@ -3,7 +3,7 @@ import { type TComponent, type Size } from '../helper'
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/slider#attributes
  */
-export type TSlider = TComponent<{
+export type ElSlider = TComponent<{
   /** 绑定值，默认值 `0` */
   value?: number
   /** 最小值，默认值 `0` */
@@ -51,9 +51,3 @@ export type TSlider = TComponent<{
    */
   onInput?: (value: number) => void
 }>
-
-declare module 'vue' {
-  interface GlobalComponents {
-    ElSlider: TSlider
-  }
-}
