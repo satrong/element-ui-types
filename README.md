@@ -73,13 +73,13 @@
 - [x] Tooltip 文字提示
 - [x] Popover 弹出框
 - [x] Popconfirm 气泡确认框
-- [ ] Card 卡片
-- [ ] Carousel 走马灯
-- [ ] Collapse 折叠面板
-- [ ] Timeline 时间线
-- [ ] Divider 分割线
-- [ ] Calendar 日历
-- [ ] Image 图片
-- [ ] Backtop 回到顶部
-- [ ] InfiniteScroll 无限滚动
-- [ ] Drawer 抽屉
+- [x] Card 卡片
+- [x] Carousel 走马灯
+- [x] Collapse 折叠面板
+- [x] Timeline 时间线
+- [x] Divider 分割线
+- [x] Calendar 日历
+- [x] Image 图片
+- [x] Backtop 回到顶部
+- ~~[x] InfiniteScroll 无限滚动~~
+- [x] Drawer 抽屉
