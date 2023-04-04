@@ -1,85 +1,54 @@
 # element-ui-types
 
-## TODO-List
+为 ElementUI 提供在 Volar 下的类型支持。
 
-#### Basic
+## 安装
 
-- [x] Layout 布局
-- [x] Container 布局容器
-- [x] ~~Color 色彩~~
-- [x] ~~Icon 图标~~
-- [x] Button 按钮
-- [x] Link 文字链接
+#### 1. 安装依赖
 
+```bash
+npm i element-ui-types -D
 
-#### Form
+# 或者
+pnpm add element-ui-types -D
+```
 
-- [x] Radio 单选框
-- [x] Checkbox 多选框
-- [x] Input 输入框
-- [x] InputNumber 计数器
-- [x] Select 选择器
-- [x] Cascader 级联选择器
-- [x] Switch 开关
-- [x] Slider 滑块
-- [x] TimePicker 时间选择器
-- [x] DatePicker 日期选择器
-- [x] ~~DateTimePicker 日期时间选择器 （实际上没有该组件，该组件是 DatePicker + TimePicker）~~
-- [x] Upload 上传
-- [x] Rate 评分
-- [x] ColorPicker 颜色选择器
-- [x] Transfer 穿梭框
-- [x] Form 表单
+#### 2. 配置 tsconfig.json
 
+在 `compilerOptions` 下的 `types` 中添加 `element-ui-types`，如下：
 
-#### Data
+```json
+{
+  "compilerOptions": {
+    "types": ["element-ui-types/2.7"]
+  }
+}
+```
 
-- [x] Table 表格
-- [x] Tag 标签
-- [x] Progress 进度条
-- [x] Tree 树形控件
-- [x] Pagination 分页
-- [x] Badge 标记
-- [x] Avatar 头像
-- [x] Skeleton 骨架屏
-- [x] Empty 空状态
-- [x] Description 描述列表
-- [x] Result 结果
-- [x] Statistic 统计数值
+> 如果 vue 版本低于 2.7，可以使用 `element-ui-types/2.6`。
+>
+> ⚠注意：我测试了在 __vue 2.6 版本__ template 模板的属性和事件都没有提示，目前还不知道怎么解决。
 
+#### 3. 重启 IDE
 
-#### Notice
+## 类型
 
-- [x] Alert 警告
-- [x] Loading 加载
-- [x] Message 消息提示
-- [x] MessageBox 弹框
-- [x] Notification 通知
+```html
+<template>
+  <ElForm ref="formRef">
+    ...
+  </ElForm>
+</template>
 
+<script lang="ts" setup>
+import type { ElForm } from 'element-ui-types'
 
-#### Navigation
+// 将 ref 的类型设置为 `ElForm`
+const formRef = ref<InstanceType<ElForm>>()
 
-- [x] NavMenu 导航菜单
-- [x] Tabs 标签页
-- [x] Breadcrumb 面包屑
-- [x] PageHeader 页头
-- [x] Dropdown 下拉菜单
-- [x] Steps 步骤条
-
-
-#### Others
-
-- [x] Dialog 对话框
-- [x] Tooltip 文字提示
-- [x] Popover 弹出框
-- [x] Popconfirm 气泡确认框
-- [x] Card 卡片
-- [x] Carousel 走马灯
-- [x] Collapse 折叠面板
-- [x] Timeline 时间线
-- [x] Divider 分割线
-- [x] Calendar 日历
-- [x] Image 图片
-- [x] Backtop 回到顶部
-- ~~[x] InfiniteScroll 无限滚动~~
-- [x] Drawer 抽屉
+// 调用表单的方法
+formRef.value?.validate(valid => {
+  // 此处可以得到 `valid` 的类型为 `boolean`
+})
+</script>
+```
