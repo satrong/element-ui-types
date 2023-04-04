@@ -1,7 +1,7 @@
 {
   "name": "element-ui-types",
-  "version": "1.0.0",
-  "description": "ElementUI typescript definition",
+  "version": "0.1.2",
+  "description": "ElementUI typescript definition, element ui types",
   "types": "src/index.d.ts",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
