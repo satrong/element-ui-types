@@ -1,5 +1,5 @@
 import type { TComponent, Size } from '../helper'
-import type { Rules } from '../async-validator-type'
+import type { Rules, RuleItem } from '../async-validator-type'
 
 type TInvalidFields = Record<string, Array<{ message: string, field: string }>>
 export type ElFormValidateCallback = (valid: boolean, invalidFields: TInvalidFields) => void
@@ -69,7 +69,7 @@ export type ElFormItem = TComponent<{
   /** 是否必填，如不设置，则会根据校验规则自动生成，默认值 `false` */
   required?: boolean
   /** 表单验证规则 */
-  rules?: Rules
+  rules?: RuleItem[]
   /** 表单域验证错误信息, 设置该值会使表单验证状态变为 `error`，并显示该错误信息 */
   error?: string
   /** 是否显示校验错误信息，默认值 `true` */
