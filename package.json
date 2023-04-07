@@ -1,6 +1,6 @@
 {
   "name": "element-ui-types",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "ElementUI typescript definition, element ui types",
   "types": "src/index.d.ts",
   "scripts": {
