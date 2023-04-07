@@ -37,7 +37,7 @@ export type ElInput = TComponent<{
   /** 输入框行数，只对 type="textarea" 有效，默认值 `2` */
   rows: number
   /** 自适应内容高度，只对 type="textarea" 有效，可传入对象，如，{ minRows: 2, maxRows: 6 }，默认值 `false` */
-  autosize: boolean | { minRows: number, maxRows: number }
+  autosize: boolean | { minRows?: number, maxRows?: number }
   /** 原生属性，自动补全，默认值 `'off'` */
   autocomplete: 'on' | 'off'
   /** 原生属性 */
