@@ -57,9 +57,9 @@ export type ElUpload = TComponent<{
   /** 文件状态改变时的钩子，添加文件、上传成功和上传失败时都会被调用 */
   onChange?: (file: ElUploadFile, fileList: ElUploadFile[]) => void
   /** 上传文件之前的钩子，参数为上传的文件，若返回 `false` 或者返回 `Promise` 且被 `reject`，则停止上传。 */
-  beforeUpload?: (file: ElUploadFile) => void
+  beforeUpload?: (file: ElUploadFile) => boolean | Promise<any>
   /** 删除文件之前的钩子，参数为上传的文件和文件列表，若返回 `false` 或者返回 `Promise` 且被 `reject`，则停止删除。 */
-  beforeRemove?: (file: ElUploadFile, fileList: ElUploadFile[]) => void
+  beforeRemove?: (file: ElUploadFile, fileList: ElUploadFile[]) => boolean | Promise<any>
   /** 文件列表的类型，默认值 `text` */
   listType?: 'text' | 'picture' | 'picture-card'
   /** 是否在选取文件后立即进行上传，默认值 `true` */
@@ -67,7 +67,7 @@ export type ElUpload = TComponent<{
   /** 上传的文件列表, 例如: `[{name: 'food.jpg', url: 'https://xxx.cdn.com/xxx.jpg'}]`，默认值 `[]` */
   fileList?: Array<{ name: string, url: string }>
   /** 覆盖默认的上传行为，可以自定义上传的实现 */
-  httpRequest?: (options: ElUploadHttpRequestOptions) => void
+  httpRequest?: (options: ElUploadHttpRequestOptions) => void | { abort?: () => void, then?: (onFulfilled?: (value: any) => any, onRejected?: (reason: any) => any) => any }
   /** 是否禁用，默认值 `false` */
   disabled?: boolean
   /** 最大允许上传个数 */
