@@ -78,9 +78,9 @@ export type ElDatePicker = TComponent<{
   appendToBody?: boolean
   /**
    * 用户确认选定的值时触发
-   * @param value 组件绑定值。格式与绑定值一致，可受 value-format 控制
+   * @param value 可能的类型有 `Date | Date[] | string | string[]`。组件绑定值。格式与绑定值一致，可受 value-format 控制
    */
-  onChange: (value: Date | Date[]) => void
+  onChange: (value: any) => void
   /** 当 input 失去焦点时触发 */
   onBlur?: (instance: Component) => void
   /** 当 input 获得焦点时触发 */

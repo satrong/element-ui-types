@@ -79,9 +79,9 @@ export type ElTimePicker = TComponent<{
   clearIcon?: string
   /**
    * 用户确认选定的值时触发
-   * @param value 组件绑定值
+   * @param value 可能的类型有 `Date | string`。组件绑定值
    */
-  onChange?: (value: Date | string) => void
+  onChange?: (value: any) => void
   /**
    * 当 input 失去焦点时触发
    * @param value 组件实例
