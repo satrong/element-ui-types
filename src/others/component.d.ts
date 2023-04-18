@@ -11,6 +11,7 @@ import type { ElCalendar } from './calendar'
 import type { ElImage } from './image'
 import type { ElBacktop } from './backtop'
 import type { ElDrawer } from './drawer'
+import type { ElScrollbar } from './scrollbar'
 
 export interface Others {
   ElDialog: ElDialog
@@ -29,4 +30,5 @@ export interface Others {
   ElImage: ElImage
   ElBacktop: ElBacktop
   ElDrawer: ElDrawer
+  ElScrollbar: ElScrollbar
 }
