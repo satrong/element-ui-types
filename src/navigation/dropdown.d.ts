@@ -41,6 +41,10 @@ export type ElDropdown = TComponent<{
   onVisibleChange: (visible: boolean) => void
 }>
 
+export type ElDropdownMenu = TComponent<{
+  slot: 'dropdown'
+}>
+
 /**
  * @link https://element.eleme.cn/#/zh-CN/component/dropdown#dropdown-menu-item-attributes
  */

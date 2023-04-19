@@ -2,7 +2,7 @@ import type { ElMenu, ElSubMenu, ElMenuItem, ElMenuItemGroup } from './menu'
 import type { ElTabs, ElTabPane } from './tabs'
 import type { ElBreadcrumb, ElBreadcrumbItem } from './breadcrumb'
 import type { ElPageHeader } from './page-header'
-import type { ElDropdown, ElDropdownItem } from './dropdown'
+import type { ElDropdown, ElDropdownMenu, ElDropdownItem } from './dropdown'
 import type { ElSteps, ElStep } from './steps'
 
 export interface Navigation {
@@ -16,6 +16,7 @@ export interface Navigation {
   ElBreadcrumbItem: ElBreadcrumbItem
   ElPageHeader: ElPageHeader
   ElDropdown: ElDropdown
+  ElDropdownMenu: ElDropdownMenu
   ElDropdownItem: ElDropdownItem
   ElSteps: ElSteps
   ElStep: ElStep
