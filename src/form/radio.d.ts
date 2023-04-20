@@ -41,7 +41,7 @@ export type ElRadioGroup = TComponent<{
    * 绑定值变化时触发的事件
    * @param value 选中的 Radio label 值
    */
-  onInput: (value: unknown) => void
+  onInput: (value: any) => void
 }>
 
 /**

@@ -30,7 +30,7 @@ export type ElSwitch = TComponent<{
   name?: string
   /** 改变 switch 状态时是否触发表单的校验，默认值 `true` */
   validateEvent?: boolean
-  onChange?: (value: boolean | string | number) => void
+  onChange?: (value: any) => void
 }, {
   /** 使 Switch 获取焦点 */
   focus: () => void
