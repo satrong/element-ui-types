@@ -29,7 +29,7 @@ export interface ElDatePickerOptions {
  */
 export type ElDatePicker = TComponent<{
   /** 绑定值， _DatePicker_ 类型为 `Date`， _DateRangePicker_ 类型为 `Date[]` */
-  value?: Date | Date[] | string
+  value?: Date | Date[] | string | string[]
   /** 完全只读，默认值 `false` */
   readonly?: boolean
   /** 禁用，默认值 `false` */
