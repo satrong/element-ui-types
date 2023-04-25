@@ -18,7 +18,7 @@ export type ElTag = TComponent<{
   /** 主题，默认值 `light` */
   effect: EffectType | 'plain'
   /** 点击 Tag 时触发的事件 */
-  onClick: () => void
+  onClick?: () => void
   /** 关闭 Tag 时触发的事件 */
-  onClose: () => void
+  onClose?: () => void
 }>

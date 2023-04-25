@@ -100,39 +100,39 @@ export type ElTable = TComponent<{
   /**
    * 当用户手动勾选数据行的 Checkbox 时触发的事件
    */
-  onSelect: (selection: any[], row: any) => void
+  onSelect?: (selection: any[], row: any) => void
   /** 当用户手动勾选全选 Checkbox 时触发的事件 */
-  onSelectAll: (selection: any[]) => void
+  onSelectAll?: (selection: any[]) => void
   /** 当选择项发生变化时会触发该事件 */
-  onSelectionChange: (selection: any[]) => void
+  onSelectionChange?: (selection: any[]) => void
   /** 当单元格 hover 进入时会触发该事件 */
-  onCellMouseEnter: (row: any, column: any, cell: any, event: Event) => void
+  onCellMouseEnter?: (row: any, column: any, cell: any, event: Event) => void
   /** 当单元格 hover 退出时会触发该事件 */
-  onCellMouseLeave: (row: any, column: any, cell: any, event: Event) => void
+  onCellMouseLeave?: (row: any, column: any, cell: any, event: Event) => void
   /** 当某个单元格被点击时会触发该事件 */
-  onCellClick: (row: any, column: any, cell: any, event: Event) => void
+  onCellClick?: (row: any, column: any, cell: any, event: Event) => void
   /** 当某个单元格被双击击时会触发该事件 */
-  onCellDblclick: (row: any, column: any, cell: any, event: Event) => void
+  onCellDblclick?: (row: any, column: any, cell: any, event: Event) => void
   /** 当某一行被点击时会触发该事件 */
-  onRowClick: (row: any, column: any, event: Event) => void
+  onRowClick?: (row: any, column: any, event: Event) => void
   /** 当某一行被鼠标右键点击时会触发该事件 */
-  onRowContextmenu: (row: any, column: any, event: Event) => void
+  onRowContextmenu?: (row: any, column: any, event: Event) => void
   /** 当某一行被双击时会触发该事件 */
-  onRowDblclick: (row: any, column: any, event: Event) => void
+  onRowDblclick?: (row: any, column: any, event: Event) => void
   /** 当某一列的表头被点击时会触发该事件 */
-  onHeaderClick: (column: any, event: Event) => void
+  onHeaderClick?: (column: any, event: Event) => void
   /** 当某一列的表头被鼠标右键点击时触发该事件 */
-  onHeaderContextmenu: (column: any, event: Event) => void
+  onHeaderContextmenu?: (column: any, event: Event) => void
   /** 当表格的排序条件发生变化的时候会触发该事件 */
-  onSortChange: (column: any, prop: string, order: string) => void
+  onSortChange?: (column: any, prop: string, order: string) => void
   /** 当表格的筛选条件发生变化的时候会触发该事件，参数的值是一个对象，对象的 key 是 column 的 columnKey，对应的 value 为用户选择的筛选条件的数组。 */
-  onFilterChange: (filters: any) => void
+  onFilterChange?: (filters: any) => void
   /** 当表格的当前行发生变化的时候会触发该事件，如果要高亮当前行，请打开表格的 highlight-current-row 属性 */
-  onCurrentChange: (currentRow: any, oldCurrentRow: any) => void
+  onCurrentChange?: (currentRow: any, oldCurrentRow: any) => void
   /** 当拖动表头改变了列的宽度的时候会触发该事件 */
-  onHeaderDragend: (newWidth: number, oldWidth: number, column: any, event: Event) => void
+  onHeaderDragend?: (newWidth: number, oldWidth: number, column: any, event: Event) => void
   /** 当用户对某一行展开或者关闭的时候会触发该事件（展开行时，回调的第二个参数为 expandedRows；树形表格时第二参数为 expanded） */
-  onExpand: (row: any, expandedRows: any[]) => void
+  onExpand?: (row: any, expandedRows: any[]) => void
 }, {
   /** 用于多选表格，清空用户的选择 */
   clearSelection: () => void

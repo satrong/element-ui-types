@@ -12,5 +12,5 @@ export type ElPageHeader = TComponent<{
   /** 内容 */
   content?: string
   /** 点击左侧区域触发 */
-  onBack: () => void
+  onBack?: () => void
 }>

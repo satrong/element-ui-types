@@ -32,11 +32,11 @@ export type ElInputNumber = TComponent<{
   /** 输入框默认 placeholder */
   placeholder?: string
   /** 绑定值被改变时触发 */
-  onChange: (currentValue: number, oldValue: number) => void
+  onChange?: (currentValue: number, oldValue: number) => void
   /** 在组件 Input 失去焦点时触发 */
-  onBlur: (e: Event) => void
+  onBlur?: (e: Event) => void
   /** 在组件 Input 获得焦点时触发 */
-  onFocus: (e: Event) => void
+  onFocus?: (e: Event) => void
 }, {
   /** 使 input 获取焦点 */
   focus: () => void

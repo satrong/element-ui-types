@@ -28,17 +28,17 @@ export type ElDropdown = TComponent<{
   /** 是否禁用，默认值 `false` */
   disabled?: boolean
   /** split-button 为 true 时，点击左侧按钮的回调 */
-  onClick: () => void
+  onClick?: () => void
   /**
    * 点击菜单项触发的事件回调
    * @param command dropdown-item 的指令
    */
-  onCommand: (command: string) => void
+  onCommand?: (command: string) => void
   /**
    * 下拉框出现/隐藏时触发
    * @param visible 出现则为 true，隐藏则为 false
    */
-  onVisibleChange: (visible: boolean) => void
+  onVisibleChange?: (visible: boolean) => void
 }>
 
 export type ElDropdownMenu = TComponent<{

@@ -41,11 +41,11 @@ export type ElDialog = TComponent<{
   /** 关闭时销毁 Dialog 中的元素，默认值 `false` */
   destroyOnClose?: boolean
   /** Dialog 打开的回调 */
-  onOpen: () => void
+  onOpen?: () => void
   /** Dialog 打开动画结束时的回调 */
-  onOpened: () => void
+  onOpened?: () => void
   /** Dialog 关闭的回调 */
-  onClose: () => void
+  onClose?: () => void
   /** Dialog 关闭动画结束时的回调 */
-  onClosed: () => void
+  onClosed?: () => void
 }>

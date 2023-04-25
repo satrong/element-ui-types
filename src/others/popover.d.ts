@@ -41,11 +41,11 @@ export type ElPopover = TComponent<{
   /** Popover 组件的 tabindex，默认值 `0` */
   tabindex?: number
   /** 显示时触发 */
-  onShow: () => void
+  onShow?: () => void
   /** 显示动画播放完毕后触发 */
-  onAfterEnter: () => void
+  onAfterEnter?: () => void
   /** 隐藏时触发 */
-  onHide: () => void
+  onHide?: () => void
   /** 隐藏动画播放完毕后触发 */
-  onAfterLeave: () => void
+  onAfterLeave?: () => void
 }>

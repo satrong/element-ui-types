@@ -22,10 +22,10 @@ export type ElColorPicker = TComponent<{
    * 当绑定值变化时触发
    * @param value 当前值
    */
-  onChange: (value: string) => void
+  onChange?: (value: string) => void
   /**
    * 面板中当前显示的颜色发生改变时触发
    * @param value 当前显示的颜色值
    */
-  onActiveChange: (value: string) => void
+  onActiveChange?: (value: string) => void
 }>

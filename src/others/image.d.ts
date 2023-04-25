@@ -29,7 +29,7 @@ export type ElImage = TComponent<{
   /** 图片预览初始图片index */
   initialIndex?: number
   /** 图片加载成功触发 */
-  onLoad: (e: Event) => void
+  onLoad?: (e: Event) => void
   /** 图片加载失败触发 */
-  onError: (e: Error) => void
+  onError?: (e: Error) => void
 }>

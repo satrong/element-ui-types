@@ -40,8 +40,8 @@ export type ElForm = TComponent<{
    * @param valid 校验是否通过
    * @param errorMessage 错误消息（如果存在）
    */
-  onValidate: (prop: string, valid: boolean, errorMessage: string | null) => void
-  onSubmit: (event: Event) => void
+  onValidate?: (prop: string, valid: boolean, errorMessage: string | null) => void
+  onSubmit?: (event: Event) => void
 }, {
   /** 对整个表单进行校验的方法，参数为一个回调函数。该回调函数会在校验结束后被调用，并传入两个参数：是否校验成功和未通过校验的字段。若不传入回调函数，则会返回一个 promise */
   validate: (callback: ElFormValidateCallback) => Promise<boolean>

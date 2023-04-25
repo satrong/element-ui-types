@@ -36,9 +36,9 @@ export type ElStatistic = TComponent<{
   /** 格式化倒计时展示，默认值 `HH:mm:ss`。 `time-indices` 为 `true` 时生效 */
   format: string
   /** 在 _倒计时_ 的功能中开启 */
-  onChange: (value: Date) => void
+  onChange?: (value: Date) => void
   /** 在 _倒计时_ 完成后启动 */
-  onFinish: (value: boolean) => void
+  onFinish?: (value: boolean) => void
 }, {
   /** 暂停倒计时 */
   suspend: (isStop: boolean) => string

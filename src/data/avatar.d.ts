@@ -21,5 +21,5 @@ export type ElAvatar = TComponent<{
   /** 当展示类型为图片的时候，设置图片如何适应容器框，默认值 `cover` */
   fit: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
   /** 图片类头像加载失败的回调， 返回 false 会关闭组件默认的 fallback 行为 */
-  onError: (e: Event) => boolean
+  onError?: (e: Event) => boolean
 }>

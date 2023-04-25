@@ -61,23 +61,23 @@ export type ElSelect = TComponent<{
    * 选中值发生变化时触发
    * @param value 当前选中的值
    */
-  onChange: (value: any) => void
+  onChange?: (value: any) => void
   /**
    * 下拉框出现/隐藏时触发
    * @param visible 出现则为 true，隐藏则为 false
    */
-  onVisibleChange: (visible: boolean) => void
+  onVisibleChange?: (visible: boolean) => void
   /**
    * 多选模式下移除tag时触发
    * @param value 被移除的tag的值
    */
-  onRemoveTag: (value: any) => void
+  onRemoveTag?: (value: any) => void
   /** 可清空的单选模式下用户点击清空按钮时触发 */
-  onClear: () => void
+  onClear?: () => void
   /** 当 input 失去焦点时触发 */
-  onBlur: (e: Event) => void
+  onBlur?: (e: Event) => void
   /** 当 input 获得焦点时触发 */
-  onFocus: (e: Event) => void
+  onFocus?: (e: Event) => void
 }, {
   /** 使 input 获取焦点 */
   focus: () => void

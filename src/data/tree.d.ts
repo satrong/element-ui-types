@@ -148,7 +148,7 @@ export type ElTree = TComponent<{
    * @param treeNodeComponentInstance 节点组件本身
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeClick: ElTreeNodeClickHandler
+  onNodeClick?: ElTreeNodeClickHandler
   /**
    * 当某一节点被鼠标右键点击时会触发该事件
    * @param e 事件
@@ -157,7 +157,7 @@ export type ElTree = TComponent<{
    * @param treeNodeComponentInstance 节点组件本身
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeContextmenu: ElTreeNodeContextmenuHandler
+  onNodeContextmenu?: ElTreeNodeContextmenuHandler
   /**
    * 节点选中状态发生变化时的回调
    * @param data 传递给 data 属性的数组中该节点所对应的对象
@@ -165,21 +165,21 @@ export type ElTree = TComponent<{
    * @param indeterminate 节点的子树中是否有被选中的节点
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onCheckChange: ElTreeCheckChangeHandler
+  onCheckChange?: ElTreeCheckChangeHandler
   /**
    * 当复选框被点击的时候触发
    * @param data 传递给 data 属性的数组中该节点所对应的对象
    * @param checkedList 树目前的选中状态对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onCheck: ElTreeCheckHandler
+  onCheck?: ElTreeCheckHandler
   /**
    * 当前选中节点变化时触发的事件
    * @param data 当前节点的数据
    * @param node 当前节点的 Node 对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onCurrentChange: ElTreeCurrentChangeHandler
+  onCurrentChange?: ElTreeCurrentChangeHandler
   /**
    * 节点被展开时触发的事件
    * @param data 传递给 data 属性的数组中该节点所对应的对象
@@ -187,7 +187,7 @@ export type ElTree = TComponent<{
    * @param treeNodeComponentInstance 节点组件本身
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeExpand: ElTreeNodeExpandHandler
+  onNodeExpand?: ElTreeNodeExpandHandler
   /**
    * 节点被关闭时触发的事件
    * @param data 传递给 data 属性的数组中该节点所对应的对象
@@ -195,14 +195,14 @@ export type ElTree = TComponent<{
    * @param treeNodeComponentInstance 节点组件本身
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeCollapse: ElTreeNodeCollapseHandler
+  onNodeCollapse?: ElTreeNodeCollapseHandler
   /**
    * 节点开始拖拽时触发的事件
    * @param node 被拖拽节点对应的 Node
    * @param e 事件对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeDragStart: ElTreeNodeDragStartHandler
+  onNodeDragStart?: ElTreeNodeDragStartHandler
   /**
    * 拖拽进入其他节点时触发的事件
    * @param draggingNode 被拖拽节点对应的 Node
@@ -210,7 +210,7 @@ export type ElTree = TComponent<{
    * @param e 事件对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeDragEnter: ElTreeNodeDragEnterHandler
+  onNodeDragEnter?: ElTreeNodeDragEnterHandler
   /**
    * 拖拽离开某个节点时触发的事件
    * @param draggingNode 被拖拽节点对应的 Node
@@ -218,7 +218,7 @@ export type ElTree = TComponent<{
    * @param e 事件对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeDragLeave: ElTreeNodeDragLeaveHandler
+  onNodeDragLeave?: ElTreeNodeDragLeaveHandler
   /**
    * 在拖拽节点时触发的事件（类似浏览器的 mouseover 事件）
    * @param draggingNode 被拖拽节点对应的 Node
@@ -226,7 +226,7 @@ export type ElTree = TComponent<{
    * @param e 事件对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeDragOver: ElTreeNodeDragOverHandler
+  onNodeDragOver?: ElTreeNodeDragOverHandler
   /**
    * 拖拽结束时（可能未成功）触发的事件
    * @param draggingNode 被拖拽节点对应的 Node
@@ -235,7 +235,7 @@ export type ElTree = TComponent<{
    * @param e 事件对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeDragEnd: ElTreeNodeDragEndHandler
+  onNodeDragEnd?: ElTreeNodeDragEndHandler
   /**
    * 拖拽成功完成时触发的事件
    * @param draggingNode 被拖拽节点对应的 Node
@@ -244,7 +244,7 @@ export type ElTree = TComponent<{
    * @param e 事件对象
    * @link https://element.eleme.cn/#/zh-CN/component/tree#events
    */
-  onNodeDrop: ElTreeNodeDropHandler
+  onNodeDrop?: ElTreeNodeDropHandler
 }, {
   /**
    * 对树节点进行筛选操作

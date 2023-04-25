@@ -48,19 +48,19 @@ export type ElTransfer = TComponent<{
    * 右侧列表元素变化时触发
    * @param value 当前值
    */
-  onChange: (value: any[], which: TWhich, movedValues: any[]) => void
+  onChange?: (value: any[], which: TWhich, movedValues: any[]) => void
   /**
    * 左侧列表元素被用户选中 / 取消选中时触发
    * @param checkedKeys 当前被选中的元素的 key 数组
    * @param currentCheckedKeys 选中状态发生变化的元素的 key 数组
    */
-  onLeftCheckChange: (checkedKeys: any[], currentCheckedKeys: any) => void
+  onLeftCheckChange?: (checkedKeys: any[], currentCheckedKeys: any) => void
   /**
    * 右侧列表元素被用户选中 / 取消选中时触发
    * @param checkedKeys 当前被选中的元素的 key 数组
    * @param currentCheckedKeys 选中状态发生变化的元素的 key 数组
    */
-  onRightCheckChange: (checkedKeys: any[], currentCheckedKeys: any) => void
+  onRightCheckChange?: (checkedKeys: any[], currentCheckedKeys: any) => void
 }, {
   /**
    * 清空某个面板的搜索关键词

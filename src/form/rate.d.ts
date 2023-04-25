@@ -42,5 +42,5 @@ export type ElRate = TComponent<{
    * 分值改变时触发
    * @param value 改变后的分值
    */
-  onChange: (value: number) => void
+  onChange?: (value: number) => void
 }>

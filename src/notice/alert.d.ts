@@ -24,5 +24,5 @@ export type ElAlert = TComponent<{
   /** 选择提供的主题，默认值 `light` */
   effect?: EffectType
   /** 关闭 alert 时触发的事件 **/
-  onClose: () => void
+  onClose?: () => void
 }>

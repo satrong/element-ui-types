@@ -36,13 +36,13 @@ export type ElDrawer = TComponent<{
   /** 控制是否显示 header 栏, 默认为 `true`, 当此项为 `false` 时, `title` attribute 和 `title` slot 均不生效，默认值 `true` */
   withHeader?: boolean
   /** Drawer 打开的回调 */
-  onOpen: () => void
+  onOpen?: () => void
   /** Drawer 打开动画结束时的回调 */
-  onOpened: () => void
+  onOpened?: () => void
   /** Drawer 关闭的回调 */
-  onClose: () => void
+  onClose?: () => void
   /** Drawer 关闭动画结束时的回调 */
-  onClosed: () => void
+  onClosed?: () => void
 }, {
   /** 用于关闭 Drawer, 该方法会调用传入的 before-close 方法 */
   closeDrawer: () => void

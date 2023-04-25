@@ -13,5 +13,5 @@ export type ElBacktop = TComponent<{
   /** 控制其显示位置, 距离页面底部距离，默认值 `40` */
   bottom?: number
   /** 点击按钮触发的事件 */
-  onClick: (e: Event) => void
+  onClick?: (e: Event) => void
 }>

@@ -25,7 +25,7 @@ export type ElCheckbox = TComponent<{
    * 当绑定值变化时触发的事件
    * @param value 更新后的值
    */
-  onChange: (value: any) => void
+  onChange?: (value: any) => void
 }>
 
 /**
@@ -50,7 +50,7 @@ export type ElCheckboxGroup = TComponent<{
    * 当绑定值变化时触发的事件
    * @param value 更新后的值
    */
-  onChange: (value: any) => void
+  onChange?: (value: any) => void
 }>
 
 /**

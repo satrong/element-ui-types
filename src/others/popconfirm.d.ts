@@ -23,7 +23,7 @@ export type ElPopconfirm = TComponent<{
   /** 是否隐藏 Icon，默认值 `false` */
   hideIcon?: boolean
   /** 点击确认按钮时触发 */
-  onConfirm: () => void
+  onConfirm?: () => void
   /** 点击取消按钮时触发 */
-  onCancel: () => void
+  onCancel?: () => void
 }>

@@ -63,15 +63,15 @@ export type ElInput = TComponent<{
   /** 输入时是否触发表单的校验，默认值 `true` */
   validateEvent?: boolean
   /** 在 Input 失去焦点时触发 */
-  onBlur: (event: FocusEvent) => void
+  onBlur?: (event: FocusEvent) => void
   /** 在 Input 获得焦点时触发 */
-  onFocus: (event: FocusEvent) => void
+  onFocus?: (event: FocusEvent) => void
   /** 仅在输入框失去焦点或用户按下回车时触发 */
-  onChange: (value: string) => void
+  onChange?: (value: string) => void
   /** 在 Input 值改变时触发 */
-  onInput: (value: string) => void
+  onInput?: (value: string) => void
   /** 在点击由 clearable 属性生成的清空按钮时触发 */
-  onClear: () => void
+  onClear?: () => void
 }, {
   /** 使 input 获取焦点 */
   focus: () => void
@@ -130,9 +130,9 @@ export type ElAutocomplete = TComponent<{
    * 点击选中建议项时触发
    * @param item 选中的建议项
    */
-  onSelect: (item: any) => void
+  onSelect?: (item: any) => void
   /** 在 Input 值改变时触发 */
-  onChange: (value: any) => void
+  onChange?: (value: any) => void
 }, {
   /** 使 input 获取焦点 */
   focus: () => void
