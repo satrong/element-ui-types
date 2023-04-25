@@ -15,19 +15,17 @@ pnpm add element-ui-types -D
 
 #### 2. 配置 tsconfig.json
 
-在 `compilerOptions` 下的 `types` 中添加 `element-ui-types`，如下：
-
 ```json
 {
+  "vueCompilerOptions": {
+    "target": 2.7,
+    // "target": 2, // For Vue version <= 2.6.14
+  },
   "compilerOptions": {
-    "types": ["element-ui-types/2.7"]
+    "types": ["element-ui-types"]
   }
 }
 ```
-
-> 如果 vue 版本低于 2.7，可以使用 `element-ui-types/2.6`。
->
-> ⚠注意：我测试了在 __vue 2.6 版本__ template 模板的属性和事件都没有提示，目前还不知道怎么解决。
 
 #### 3. 重启 IDE
 

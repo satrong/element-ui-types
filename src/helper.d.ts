@@ -4,7 +4,7 @@ import type {
   ComputedGetter,
   WritableComputedOptions,
   ComponentPropsOptions
-} from 'vue'
+} from '@vue/runtime-dom'
 
 type ObjectEmitsOptions = Record<string, ((...args: any[]) => any) | null>
 
