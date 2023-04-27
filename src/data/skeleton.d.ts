@@ -24,5 +24,5 @@ export type ElSkeleton = TComponent<{
  */
 export type ElSkeletonItem = TComponent<{
   /** 当前显示的占位元素的样式，默认值 `text` */
-  variant: 'p' | 'h1' | 'h3' | 'text' | 'caption' | 'button' | 'image' | 'circle' | 'rect'
+  variant?: 'p' | 'h1' | 'h3' | 'text' | 'caption' | 'button' | 'image' | 'circle' | 'rect'
 }>

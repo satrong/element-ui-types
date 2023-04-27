@@ -12,29 +12,29 @@ import type { TComponent } from '../helper'
  */
 export type ElStatistic = TComponent<{
   /** 数值内容。如果为倒计时模式，则类型为 `string` */
-  value: string | number
+  value?: string | number
   /** 设置小数点，默认值 `.` */
-  decimalSeparator: string
+  decimalSeparator?: string
   /** 自定义数值展示 */
-  formatter: (param: { value: string | number }) => VNode
+  formatter?: (param: { value: string | number }) => VNode
   /** 设置千分位标识符，默认值 `,` */
-  groupSeparator: string
+  groupSeparator?: string
   /** 数值精度，默认值 `0` */
-  precision: number
+  precision?: number
   /** 设置数值的前缀 */
-  prefix: string
+  prefix?: string
   /** 设置数值的后缀 */
-  suffix: string
+  suffix?: string
   /** 数值的标题 */
-  title: string
+  title?: string
   /** 设置数值的样式 */
-  valueStyle: Record<string, string>
+  valueStyle?: Record<string, string>
   /** 设置倍率，默认值 `1000` */
-  rate: number
+  rate?: number
   /** 是否开启倒计时功能，默认值 `false` */
-  timeIndices: boolean
+  timeIndices?: boolean
   /** 格式化倒计时展示，默认值 `HH:mm:ss`。 `time-indices` 为 `true` 时生效 */
-  format: string
+  format?: string
   /** 在 _倒计时_ 的功能中开启 */
   onChange?: (value: Date) => void
   /** 在 _倒计时_ 完成后启动 */

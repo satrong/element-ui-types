@@ -9,9 +9,9 @@ import type { TComponent } from '../helper'
  */
 export type ElEmpty = TComponent<{
   /** 图片地址 */
-  image: string
+  image?: string
   /** 图片大小（宽度） */
-  imageSize: number
+  imageSize?: number
   /** 文本描述 */
-  description: string
+  description?: string
 }>
