@@ -12,6 +12,11 @@
     "element ui",
     "element types"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satrong/element-ui-types.git"
+  },
+  "homepage": "https://github.com/satrong/element-ui-types",
   "author": "satrong <satrong@foxmail.com>",
   "license": "MIT",
   "dependencies": {
