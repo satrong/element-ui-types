@@ -16,7 +16,7 @@ export interface ElCascaderProps {
   /** 是否动态加载子节点，需与 `lazyLoad` 方法结合使用，默认值 `false` */
   lazy?: boolean
   /** 加载动态数据的方法，仅在 `lazy` 为 `true` 时有效 */
-  lazyLoad?: (node: any, resolve: () => void) => void
+  lazyLoad?: (node: any, resolve: (data: any) => void) => void
   /** 指定选项的值为选项对象的某个属性值，默认值 `value` */
   value?: string
   /** 指定选项标签为选项对象的某个属性值，默认值 `label` */
