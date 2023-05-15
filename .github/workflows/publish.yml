@@ -2,6 +2,11 @@ name: Publish
 
 on:
   workflow_dispatch:
+    inputs:
+    bump:
+      required: true
+      description: "发版类型 latest, beta, alpha, rc. 默认 latest"
+      default: "latest"
   push:
     tags:
       - v*
@@ -32,4 +37,4 @@ jobs:
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+        run: npm publish --tag ${{ github.event.inputs.bump }}
