@@ -1,33 +1,14 @@
-import type { ElTable, ElTableColumn } from './table'
-import type { ElTag } from './tag'
-import type { ElProgress } from './progress'
-import type { ElTree } from './tree'
-import type { ElPagination } from './pagination'
-import type { ElBadge } from './badge'
-import type { ElAvatar } from './avatar'
-import type { ElSkeleton, ElSkeletonItem } from './skeleton'
-import type { ElEmpty } from './empty'
-import type { ElDescriptions, ElDescriptionsItem } from './descriptions'
-import type { ElResult } from './result'
-import type { ElStatistic } from './statistic'
-
+export type { ElTable, ElTableColumn } from './table'
+export type { ElTag } from './tag'
+export type { ElProgress } from './progress'
+export type { ElTree } from './tree'
+export type { ElPagination } from './pagination'
+export type { ElBadge } from './badge'
+export type { ElAvatar } from './avatar'
+export type { ElSkeleton, ElSkeletonItem } from './skeleton'
+export type { ElEmpty } from './empty'
+export type { ElDescriptions, ElDescriptionsItem } from './descriptions'
+export type { ElResult } from './result'
+export type { ElStatistic } from './statistic'
 export type { ElTableLoad, ElTableSpanMethod, ElTableSummaryMethod, ElTableTreeNode } from './table'
 export type { ElTreeCheckChangeHandler, ElTreeCheckHandler, ElTreeCurrentChangeHandler, ElTreeFilterNodeMethod, ElTreeLoad, ElTreeNode, ElTreeNodeClickHandler, ElTreeNodeCollapseHandler, ElTreeNodeContextmenuHandler, ElTreeNodeDragEndHandler, ElTreeNodeDragEnterHandler, ElTreeNodeDragLeaveHandler, ElTreeNodeDragOverHandler, ElTreeNodeDragStartHandler, ElTreeNodeDropHandler, ElTreeNodeExpandHandler, ElTreeProps, ElTreeRenderContent, ElTreeStore } from './tree'
-
-export type {
-  ElTable,
-  ElTableColumn,
-  ElTag,
-  ElProgress,
-  ElTree,
-  ElPagination,
-  ElBadge,
-  ElAvatar,
-  ElSkeleton,
-  ElSkeletonItem,
-  ElEmpty,
-  ElDescriptions,
-  ElDescriptionsItem,
-  ElResult,
-  ElStatistic
-}

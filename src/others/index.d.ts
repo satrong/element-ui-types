@@ -1,34 +1,14 @@
-import type { ElDialog } from './dialog'
-import type { ElTooltip } from './tooltip'
-import type { ElPopover } from './popover'
-import type { ElPopconfirm } from './popconfirm'
-import type { ElCard } from './card'
-import type { ElCarousel, ElCarouselItem } from './carousel'
-import type { ElAccordion, ElAccordionItem } from './collapse'
-import type { ElTimeline, ElTimelineItem } from './timeline'
-import type { ElDivider } from './divider'
-import type { ElCalendar } from './calendar'
-import type { ElImage } from './image'
-import type { ElBacktop } from './backtop'
-import type { ElDrawer } from './drawer'
-import type { ElScrollbar } from './scrollbar'
-
-export type {
-  ElDialog,
-  ElTooltip,
-  ElPopover,
-  ElPopconfirm,
-  ElCard,
-  ElCarousel,
-  ElCarouselItem,
-  ElAccordion,
-  ElAccordionItem,
-  ElTimeline,
-  ElTimelineItem,
-  ElDivider,
-  ElCalendar,
-  ElImage,
-  ElBacktop,
-  ElDrawer,
-  ElScrollbar
-}
+export type { ElDialog } from './dialog'
+export type { ElTooltip } from './tooltip'
+export type { ElPopover } from './popover'
+export type { ElPopconfirm } from './popconfirm'
+export type { ElCard } from './card'
+export type { ElCarousel, ElCarouselItem } from './carousel'
+export type { ElAccordion, ElAccordionItem } from './collapse'
+export type { ElTimeline, ElTimelineItem } from './timeline'
+export type { ElDivider } from './divider'
+export type { ElCalendar } from './calendar'
+export type { ElImage } from './image'
+export type { ElBacktop } from './backtop'
+export type { ElDrawer } from './drawer'
+export type { ElScrollbar } from './scrollbar'
