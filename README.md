@@ -39,7 +39,7 @@ pnpm add element-ui-types -D
 </template>
 
 <script lang="ts" setup>
-import type { ElForm } from 'element-ui-types'
+  import type { ElForm } from 'element-ui-types'
 
 // 将 ref 的类型设置为 `ElForm`
 const formRef = ref<InstanceType<ElForm>>()
@@ -50,3 +50,5 @@ formRef.value?.validate(valid => {
 })
 </script>
 ```
+
+![](https://raw.githubusercontent.com/satrong/element-ui-types/main/demo.gif)
