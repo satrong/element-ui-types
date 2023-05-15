@@ -3,10 +3,10 @@ name: Publish
 on:
   workflow_dispatch:
     inputs:
-    bump:
-      required: true
-      description: "发版类型 latest, beta, alpha, rc. 默认 latest"
-      default: "latest"
+      bump:
+        required: true
+        description: "发版类型 latest, beta, alpha, rc. 默认 latest"
+        default: "latest"
   push:
     tags:
       - v*
