@@ -1,21 +1,21 @@
-# element-ui-types
+Provide types support for ElementUI under Volar.
 
-为 ElementUI 提供在 Volar 下的类型支持。
+## Install and usage
 
-## 安装
+#### 1. Install _element-ui-types_
 
-#### 1. 安装依赖
 
 ```bash
 npm i element-ui-types -D
 
-# 或者
+# Or
 pnpm add element-ui-types -D
 ```
 
-#### 2. 配置 tsconfig.json
+#### 2. Add the following configuration to _tsconfig.json_
 
 ```json
+// tsconfig.json
 {
   "vueCompilerOptions": {
     "target": 2.7,
@@ -27,9 +27,9 @@ pnpm add element-ui-types -D
 }
 ```
 
-#### 3. 重启 IDE
+#### 3. Reload IDE
 
-## 类型
+## Demo
 
 ```html
 <template>
@@ -39,14 +39,12 @@ pnpm add element-ui-types -D
 </template>
 
 <script lang="ts" setup>
-  import type { ElForm } from 'element-ui-types'
+import { type Form } from 'element-ui'
 
-// 将 ref 的类型设置为 `ElForm`
-const formRef = ref<InstanceType<ElForm>>()
+const formRef = ref<InstanceType<typeof Form>>()
 
-// 调用表单的方法
 formRef.value?.validate(valid => {
-  // 此处可以得到 `valid` 的类型为 `boolean`
+  // `valid` is type of  `boolean`
 })
 </script>
 ```
