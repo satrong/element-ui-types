@@ -14,7 +14,7 @@ pnpm add element-ui-types -D
 
 #### 2. Add the following configuration to _tsconfig.json_
 
-```json
+```jsonc
 // tsconfig.json
 {
   "vueCompilerOptions": {
