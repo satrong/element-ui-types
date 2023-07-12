@@ -34,7 +34,13 @@ jobs:
 
       - run: pnpm install
 
+      - name: Update package.json
+        run: node build/scripts.js
+
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: node build/scripts.js && npm publish --tag ${{ github.event.inputs.bump | default('latest') }} && node build/restore.js
+        run: npm publish --tag ${{ github.event.inputs.bump || 'latest' }}
+        
+      - name: Restore package.json
+        run: node build/restore.js
