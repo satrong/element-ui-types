@@ -1,11 +1,12 @@
 {
   "name": "element-ui-types",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "ElementUI typescript definition, element ui types",
   "types": "src/index.d.ts",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "echo '需要先移除 scripts, devDependencies, lint-staged 字段，或者先执行 node build/scripts.js 再发布，再执行 node build/restore.js' && exit 1"
   },
   "keywords": [
     "element-ui",
