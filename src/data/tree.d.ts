@@ -17,7 +17,7 @@ export interface ElTreeProps {
 
 export type ElTreeLoad = (node: any, resolve: (data: any[]) => void) => void
 
-export type ElTreeFilterNodeMethod = (value: any, data: any[], node: ElTreeNode) => boolean
+export type ElTreeFilterNodeMethod = (value: any, nodeData: any, node: ElTreeNode) => boolean
 
 export type ElTreeRenderContent = (h: CreateElement, { node, data, store }: { node: ElTreeNode, data: any, store: ElTreeStore }) => VNode
 
